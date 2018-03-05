@@ -1,0 +1,73 @@
+.listings-page {
+  background: #fff;
+
+  #filter {
+  	display: flex;
+  	flex-direction: row;
+  	flex-wrap: nowrap;
+  	padding: 50px 0px;
+
+
+  }
+
+  .form-group {
+  	display: flex;
+  	flex-direction: column;
+  	
+  	}
+
+  	label {
+  		font-weight: 500;
+  		margin-bottom: 0.8rem;
+  		font-size: 0.8rem;
+  	}
+  	select {
+  		background: #fff;
+  		border-radius: 5px;
+  		padding: 10px;
+  		color: #1b1b1b;
+  		min-width: 100px;
+  		font-size: 1.3rem;
+  		border: 2px solid #ADBED2;
+  		margin-right: 20px;
+  	}
+
+  	&.button {
+  		flex-direction: row;
+  		align-items: flex-end;
+  	}
+
+  	.primary-btn {
+  		padding: 10px 20px;
+  		background: #2A7DDD;
+  		color: #fff;
+  		&:hover {
+  		cursor: pointer;
+  		}
+  		
+  	}
+
+  	.reset-btn {
+  		background: #F7F8FA;
+  		&:hover {
+  			background: #F7F8FA;
+  			cursor: pointer;
+  			margin-right: 20px;
+  			
+  		}
+  	}
+
+  	.primary-btn, .reset-btn {
+  		padding: 10px 20px;
+  		border-radius: 5px;
+  		cursor: pointer;
+
+  	}
+
+  #list-view {
+  	.change-view {
+  		display: flex;
+  		flex-direction: row;
+  	}
+  }
+}
