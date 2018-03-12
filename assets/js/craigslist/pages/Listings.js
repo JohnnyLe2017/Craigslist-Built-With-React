@@ -5,9 +5,25 @@ import ReactDOM from 'react-dom'
 export default class Listings extends Component {
   constructor () {
     super()
-    this.state = {
+    this.state = {}
+  }
 
-    }
+  loopItems = () =>{
+    let testArray = [1,2,3,4,5,6,7,8]
+    return testArray.map ((item, i) => {
+      return(
+        <div className="item">
+        <div className="image">
+        <div className="price">$9,000</div>
+        Image
+        </div>
+        <div className="details">
+          <h5>Title</h5>
+        <h6>City</h6>
+        </div>
+        </div>
+      )
+    })
   }
 
   render () {
@@ -66,16 +82,7 @@ export default class Listings extends Component {
       </section>
 
         <section className="all-items">
-            <div className="item">
-            <div className="image">
-            <div className="price">$9,000</div>
-            <div className="details">
-              Image
-              </div>
-            <h5>Title</h5>
-            <h6>City</h6>
-            </div>
-            </div>
+          {this.loopItems()}
         </section>
       </div>
       </div>

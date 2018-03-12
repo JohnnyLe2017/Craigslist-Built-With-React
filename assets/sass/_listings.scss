@@ -79,12 +79,13 @@
   	}
 
     .all-items {
+      padding: 20px 0;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 20px 20px;
     }
       .item {
-      border: 1px solid #000;
+      box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.37);
       border-radius: 5px;
       overflow: hidden;
 
@@ -105,10 +106,16 @@
         }
       }
       .details {
+        padding: 10px;
+
         h5 {
+          font-size: 0.9rem;
           color: #27292D;
+          line-height: 1.5;
+          margin-bottom: 5px;
         }
         h6 {
+          font-size: 0.7rem;
           color: #565D68;
         }
       }
