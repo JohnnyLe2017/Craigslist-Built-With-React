@@ -15,8 +15,7 @@ export default class Listings extends Component {
     return (
       <div className="listings-page">
       <div className="container">
-
-      <section id="filter">
+        <section id="filter">
       <div className="form-group price">
       <label>PRICE</label>
       <div className="min-max">
@@ -28,7 +27,6 @@ export default class Listings extends Component {
       </select>
       </div>
       </div>
-
       <div className="form-group make">
         <label>MAKE</label>
           <select name="make" className="make">
@@ -48,8 +46,10 @@ export default class Listings extends Component {
       <div className="reset-btn">Reset</div>
       </div>
       </section>
-
+      </div>
       <section id="list-view">
+        <div className="container">
+            <div className="white-box">
         <section className="change-view">
         <div className="form-group view-dropdown">
           <select name="select-view" className="select-view">
@@ -63,21 +63,24 @@ export default class Listings extends Component {
             <option value="gallery">Newest</option>
           </select>
         </div>
-        </section>
+      </section>
 
         <section className="all-items">
-          <div className="item"></div>
-          <div className="image"></div>
-          <div className="price">$9,000</div>
-          <div className="details"></div>
-          Image
-          <h5>Title</h5>
-          <h6>City</h6>
-
+            <div className="item">
+            <div className="image">
+            <div className="price">$9,000</div>
+            <div className="details">
+              Image
+              </div>
+            <h5>Title</h5>
+            <h6>City</h6>
+            </div>
+            </div>
         </section>
+      </div>
+      </div>
       </section>
       </div>
-      </div>
     )
-    }
+  }
 }

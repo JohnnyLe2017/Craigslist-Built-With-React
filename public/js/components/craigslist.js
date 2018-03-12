@@ -161,7 +161,7 @@ var Header = function (_Component) {
     var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this));
 
     _this.clickedBtn = function () {
-      console.log('swag');
+      console.log('');
     };
 
     _this.state = {
@@ -670,71 +670,88 @@ var Listings = function (_Component) {
                 'Reset'
               )
             )
-          ),
+          )
+        ),
+        _react2.default.createElement(
+          'section',
+          { id: 'list-view' },
           _react2.default.createElement(
-            'section',
-            { id: 'list-view' },
+            'div',
+            { className: 'container' },
             _react2.default.createElement(
-              'section',
-              { className: 'change-view' },
+              'div',
+              { className: 'white-box' },
               _react2.default.createElement(
-                'div',
-                { className: 'form-group view-dropdown' },
+                'section',
+                { className: 'change-view' },
                 _react2.default.createElement(
-                  'select',
-                  { name: 'select-view', className: 'select-view' },
+                  'div',
+                  { className: 'form-group view-dropdown' },
                   _react2.default.createElement(
-                    'option',
-                    { value: 'gallery' },
-                    'Gallery View'
-                  ),
+                    'select',
+                    { name: 'select-view', className: 'select-view' },
+                    _react2.default.createElement(
+                      'option',
+                      { value: 'gallery' },
+                      'Gallery View'
+                    ),
+                    _react2.default.createElement(
+                      'option',
+                      { value: 'list' },
+                      'List View'
+                    ),
+                    _react2.default.createElement(
+                      'option',
+                      { value: 'thumb' },
+                      'Thumb View'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'form-group sort-dropdown' },
                   _react2.default.createElement(
-                    'option',
-                    { value: 'list' },
-                    'List View'
-                  ),
-                  _react2.default.createElement(
-                    'option',
-                    { value: 'thumb' },
-                    'Thumb View'
+                    'select',
+                    { name: 'sort-dropdown', className: 'sort-dropdown' },
+                    _react2.default.createElement(
+                      'option',
+                      { value: 'gallery' },
+                      'Newest'
+                    )
                   )
                 )
               ),
               _react2.default.createElement(
-                'div',
-                { className: 'form-group sort-dropdown' },
+                'section',
+                { className: 'all-items' },
                 _react2.default.createElement(
-                  'select',
-                  { name: 'sort-dropdown', className: 'sort-dropdown' },
+                  'div',
+                  { className: 'item' },
                   _react2.default.createElement(
-                    'option',
-                    { value: 'gallery' },
-                    'Newest'
+                    'div',
+                    { className: 'image' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'price' },
+                      '$9,000'
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'details' },
+                      'Image'
+                    ),
+                    _react2.default.createElement(
+                      'h5',
+                      null,
+                      'Title'
+                    ),
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'City'
+                    )
                   )
                 )
-              )
-            ),
-            _react2.default.createElement(
-              'section',
-              { className: 'all-items' },
-              _react2.default.createElement('div', { className: 'item' }),
-              _react2.default.createElement('div', { className: 'image' }),
-              _react2.default.createElement(
-                'div',
-                { className: 'price' },
-                '$9,000'
-              ),
-              _react2.default.createElement('div', { className: 'details' }),
-              'Image',
-              _react2.default.createElement(
-                'h5',
-                null,
-                'Title'
-              ),
-              _react2.default.createElement(
-                'h6',
-                null,
-                'City'
               )
             )
           )

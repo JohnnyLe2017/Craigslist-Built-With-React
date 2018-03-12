@@ -13,7 +13,7 @@
   .form-group {
   	display: flex;
   	flex-direction: column;
-  	
+
   	}
 
   	label {
@@ -44,7 +44,7 @@
   		&:hover {
   		cursor: pointer;
   		}
-  		
+
   	}
 
   	.reset-btn {
@@ -53,7 +53,7 @@
   			background: #F7F8FA;
   			cursor: pointer;
   			margin-right: 20px;
-  			
+
   		}
   	}
 
@@ -65,9 +65,53 @@
   	}
 
   #list-view {
+    background: #F7F8FA;
+    padding: 20px 0;
+
+    .white-box {
+	background: #FFF;
+	padding: 20px;
+    }
+
   	.change-view {
   		display: flex;
   		flex-direction: row;
   	}
+
+    .all-items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px 20px;
+    }
+      .item {
+      border: 1px solid #000;
+      border-radius: 5px;
+      overflow: hidden;
+
+      .image {
+      background: url("https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_4.jpg");
+      height: 250px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: relative;
+      padding: 10px;
+        .price {
+          background: #FFF;
+          position: absolute;
+          padding: 5px 10px;
+          color: green;
+          border-radius: 3px;
+        }
+      }
+      .details {
+        h5 {
+          color: #27292D;
+        }
+        h6 {
+          color: #565D68;
+        }
+      }
+}
   }
 }
