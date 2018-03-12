@@ -18,8 +18,10 @@ export default class Listings extends Component {
         Image
         </div>
         <div className="details">
-          <h5>Title</h5>
-        <h6>City</h6>
+          <i className="fa fa-star" aria-hidden="true"></i>
+          <h5>2017 BMW 5-Series
+          </h5>
+        <h6>Atlanta</h6>
         </div>
         </div>
       )

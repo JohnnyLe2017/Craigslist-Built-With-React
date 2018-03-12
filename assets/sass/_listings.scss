@@ -107,12 +107,26 @@
       }
       .details {
         padding: 10px;
+        position: relative;
+
+        .fa-star {
+          position: absolute;
+          top: 20px;
+          right: 10px;
+          font-size: 1.4rem;
+          &:hover {
+            cursor: pointer;
+            color: gold;
+          }
+        }
 
         h5 {
           font-size: 0.9rem;
           color: #27292D;
           line-height: 1.5;
           margin-bottom: 5px;
+
+
         }
         h6 {
           font-size: 0.7rem;

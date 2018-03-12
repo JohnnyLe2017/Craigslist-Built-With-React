@@ -185,7 +185,7 @@ var Header = function (_Component) {
             'Craigslist'
           ),
           _react2.default.createElement('div', { className: 'city' }),
-          'San Francisco',
+          'Atlanta',
           _react2.default.createElement('i', { className: 'fas fa-chevron-down' })
         ),
         _react2.default.createElement(
@@ -587,15 +587,16 @@ var Listings = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'details' },
+            _react2.default.createElement('i', { className: 'fa fa-star', 'aria-hidden': 'true' }),
             _react2.default.createElement(
               'h5',
               null,
-              'Title'
+              '2017 BMW 5-Series'
             ),
             _react2.default.createElement(
               'h6',
               null,
-              'City'
+              'Atlanta'
             )
           )
         );
