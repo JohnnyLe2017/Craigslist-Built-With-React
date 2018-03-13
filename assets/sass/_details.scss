@@ -73,54 +73,12 @@
         .thumbnails {
           display: grid;
           grid-template-columns: repeat(6, 1fr);
-
-         .thumb-image1 {
-          background-image: url("https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_5.jpg");
-          width: 100px;
-          height: 100px;
-          background-size: cover;
-          background-position: center center;
-          background-repeat: no-repeat;
-          }
-          .thumb-image2 {
-          background-image: url("https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_6.jpg");
-          width: 100px;
-          height: 100px;
-          background-size: cover;
-          background-position: center center;
-          background-repeat: no-repeat;
-          }
-          .thumb-image3 {
-          background-image: url("https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_7.jpg");
-          width: 100px;
-          height: 100px;
-          background-size: cover;
-          background-position: center center;
-          background-repeat: no-repeat;
-          }
-          .thumb-image4 {
-          background-image: url("https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_12.jpg");
-          width: 100px;
-          height: 100px;
-          background-size: cover;
-          background-position: center center;
-          background-repeat: no-repeat;
-          }
-          .thumb-image5 {
-          background-image: url("https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_13.jpg");
-          width: 100px;
-          height: 100px;
-          background-size: cover;
-          background-position: center center;
-          background-repeat: no-repeat;
-          }
-          .thumb-image6 {
-          background-image: url("https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_14.jpg");
-          width: 100px;
-          height: 100px;
-          background-size: cover;
-          background-position: center center;
-          background-repeat: no-repeat;
+          .thumb-image {
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
           }
         }
       }
