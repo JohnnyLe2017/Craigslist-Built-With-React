@@ -579,6 +579,11 @@ var Details = function (_Component) {
                   "div",
                   { className: "description" },
                   _react2.default.createElement(
+                    "label",
+                    null,
+                    "Description"
+                  ),
+                  _react2.default.createElement(
                     "p",
                     null,
                     "The fully redesigned 2017 BMW 5 Series brings a slew of new features, making it one of the most technologically advanced luxury midsize cars. The 5 Series' ride emphasizes comfort, and while it's fairly composed, sportier rivals provide a more engaging driving experience."

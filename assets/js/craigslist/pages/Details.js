@@ -94,6 +94,7 @@ export default class Details extends Component {
                   </div>
                 </div>
                 <div className="description">
+                  <label>Description</label>
                   <p>
                     The fully redesigned 2017 BMW 5 Series brings a slew of new
                     features, making it one of the most technologically advanced

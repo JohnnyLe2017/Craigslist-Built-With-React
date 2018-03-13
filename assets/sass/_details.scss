@@ -140,19 +140,27 @@
         font-size: 1.7rem;
         color: green;
         font-weight: 500;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
+      }
+      label {
+        font-weight: 700;
+        font-size: .8rem;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        display: block;
       }
       .more-details {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid grey;
         .info {
-          label {
-            font-weight: 700;
-            font-size: .7rem;
-            text-transform: uppercase;
-          }
-          h5 {
 
+          h5 {
+            font-size: 0.9rem;
+            font-weight: 400;
+            text-transform: capitalize;
           }
         }
       }
