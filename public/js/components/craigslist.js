@@ -422,7 +422,150 @@ var Details = function (_Component) {
                 )
               )
             ),
-            _react2.default.createElement("div", { className: "details-column" })
+            _react2.default.createElement(
+              "div",
+              { className: "details-column" },
+              _react2.default.createElement(
+                "div",
+                { className: "date" },
+                "Posted: March 28th"
+              ),
+              _react2.default.createElement(
+                "h4",
+                { className: "price" },
+                "Silver 2017 BMW"
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "more-details" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "info" },
+                  _react2.default.createElement(
+                    "label",
+                    null,
+                    "Vin"
+                  ),
+                  _react2.default.createElement(
+                    "h5",
+                    null,
+                    "1HHBH41JXMN109186"
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "info" },
+                  _react2.default.createElement(
+                    "label",
+                    null,
+                    "Mileage"
+                  ),
+                  _react2.default.createElement(
+                    "h5",
+                    null,
+                    "5,600"
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "info" },
+                  _react2.default.createElement(
+                    "label",
+                    null,
+                    "Transmission"
+                  ),
+                  _react2.default.createElement(
+                    "h5",
+                    null,
+                    "6-Speed Automatic"
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "info" },
+                  _react2.default.createElement(
+                    "label",
+                    null,
+                    "Fuel"
+                  ),
+                  _react2.default.createElement(
+                    "h5",
+                    null,
+                    "Gasoline"
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "info" },
+                  _react2.default.createElement(
+                    "label",
+                    null,
+                    "Exterior Color"
+                  ),
+                  _react2.default.createElement(
+                    "h5",
+                    null,
+                    "Silver"
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "info" },
+                  _react2.default.createElement(
+                    "label",
+                    null,
+                    "Drive"
+                  ),
+                  _react2.default.createElement(
+                    "h5",
+                    null,
+                    "Rear Wheel Drive"
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "info" },
+                  _react2.default.createElement(
+                    "label",
+                    null,
+                    "Type"
+                  ),
+                  _react2.default.createElement(
+                    "h5",
+                    null,
+                    "Sedan"
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "info" },
+                  _react2.default.createElement(
+                    "label",
+                    null,
+                    "Interior Color"
+                  ),
+                  _react2.default.createElement(
+                    "h5",
+                    null,
+                    "Black Leather"
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "info" },
+                  _react2.default.createElement(
+                    "label",
+                    null,
+                    "Condition"
+                  ),
+                  _react2.default.createElement(
+                    "h5",
+                    null,
+                    "Like New"
+                  )
+                )
+              )
+            )
           )
         )
       );

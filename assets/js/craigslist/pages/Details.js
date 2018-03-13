@@ -36,11 +36,51 @@ export default class Details extends Component {
                   </div>
                 </div>
                 <div className="thumbnails">
-                <div className="thumb-image">Image</div>
+                  <div className="thumb-image">Image</div>
                 </div>
               </div>
             </div>
             <div className="details-column">
+              <div className="date">Posted: March 28th</div>
+              <h4 className="price">Silver 2017 BMW</h4>
+              <div className="more-details">
+                <div className="info">
+                  <label>Vin</label>
+                  <h5>1HHBH41JXMN109186</h5>
+                </div>
+                <div className="info">
+                  <label>Mileage</label>
+                  <h5>5,600</h5>
+                </div>
+                <div className="info">
+                  <label>Transmission</label>
+                  <h5>6-Speed Automatic</h5>
+                </div>
+                <div className="info">
+                  <label>Fuel</label>
+                  <h5>Gasoline</h5>
+                </div>
+                <div className="info">
+                  <label>Exterior Color</label>
+                  <h5>Silver</h5>
+                </div>
+                <div className="info">
+                  <label>Drive</label>
+                  <h5>Rear Wheel Drive</h5>
+                </div>
+                <div className="info">
+                  <label>Type</label>
+                  <h5>Sedan</h5>
+                </div>
+                <div className="info">
+                  <label>Interior Color</label>
+                  <h5>Black Leather</h5>
+                </div>
+                <div className="info">
+                  <label>Condition</label>
+                  <h5>Like New</h5>
+                </div>
+              </div>
             </div>
           </section>
         </div>
