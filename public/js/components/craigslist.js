@@ -343,235 +343,239 @@ var Details = function (_Component) {
           "div",
           { className: "container" },
           _react2.default.createElement(
-            "section",
-            { className: "submenu" },
+            "div",
+            { className: "white-box" },
             _react2.default.createElement(
-              "div",
-              { className: "direction" },
+              "section",
+              { className: "submenu" },
               _react2.default.createElement(
                 "div",
-                { className: "prev" },
-                "Prev"
+                { className: "direction" },
+                _react2.default.createElement(
+                  "a",
+                  { href: "#", className: "prev" },
+                  "Prev"
+                ),
+                _react2.default.createElement(
+                  "a",
+                  { href: "#", className: "next" },
+                  "Next"
+                )
               ),
               _react2.default.createElement(
-                "div",
-                { className: "next" },
-                "Next"
+                "nav",
+                { className: "sub-links" },
+                _react2.default.createElement(
+                  "a",
+                  { href: "#" },
+                  "More Ads by User"
+                ),
+                _react2.default.createElement(
+                  "a",
+                  { href: "#" },
+                  "Print"
+                ),
+                _react2.default.createElement(
+                  "a",
+                  { href: "#" },
+                  "Share"
+                ),
+                _react2.default.createElement(
+                  "a",
+                  { href: "#" },
+                  "Contact Seller"
+                )
               )
             ),
             _react2.default.createElement(
-              "nav",
-              { className: "sub-links" },
-              _react2.default.createElement(
-                "a",
-                { href: "#" },
-                "More Ads by User"
-              ),
-              _react2.default.createElement(
-                "a",
-                { href: "#" },
-                "Print"
-              ),
-              _react2.default.createElement(
-                "a",
-                { href: "#" },
-                "Share"
-              ),
-              _react2.default.createElement(
-                "a",
-                { href: "#" },
-                "Contact Seller"
-              )
-            )
-          ),
-          _react2.default.createElement(
-            "section",
-            null,
-            _react2.default.createElement(
-              "div",
-              { className: "media-column" },
+              "section",
+              { className: "content-area" },
               _react2.default.createElement(
                 "div",
-                { className: "gallery" },
+                { className: "media-column" },
                 _react2.default.createElement(
                   "div",
-                  { className: "slider" },
+                  { className: "gallery" },
                   _react2.default.createElement(
                     "div",
-                    { className: "main-image" },
+                    { className: "slider" },
                     _react2.default.createElement(
                       "div",
-                      { className: "left-arrow" },
-                      "<"
+                      { className: "main-image" },
+                      _react2.default.createElement(
+                        "div",
+                        { className: "left-arrow" },
+                        "<"
+                      ),
+                      _react2.default.createElement(
+                        "div",
+                        { className: "left-arrow" },
+                        ">"
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "thumbnails" },
+                    _react2.default.createElement(
+                      "div",
+                      { className: "thumb-image" },
+                      "Image"
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "details-column" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "date" },
+                  "Posted: March 28th"
+                ),
+                _react2.default.createElement(
+                  "h4",
+                  { className: "price" },
+                  "Silver 2017 BMW"
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "more-details" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "info" },
+                    _react2.default.createElement(
+                      "label",
+                      null,
+                      "Vin"
                     ),
                     _react2.default.createElement(
-                      "div",
-                      { className: "left-arrow" },
-                      ">"
+                      "h5",
+                      null,
+                      "1HHBH41JXMN109186"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "info" },
+                    _react2.default.createElement(
+                      "label",
+                      null,
+                      "Mileage"
+                    ),
+                    _react2.default.createElement(
+                      "h5",
+                      null,
+                      "5,600"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "info" },
+                    _react2.default.createElement(
+                      "label",
+                      null,
+                      "Transmission"
+                    ),
+                    _react2.default.createElement(
+                      "h5",
+                      null,
+                      "6-Speed Automatic"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "info" },
+                    _react2.default.createElement(
+                      "label",
+                      null,
+                      "Fuel"
+                    ),
+                    _react2.default.createElement(
+                      "h5",
+                      null,
+                      "Gasoline"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "info" },
+                    _react2.default.createElement(
+                      "label",
+                      null,
+                      "Exterior Color"
+                    ),
+                    _react2.default.createElement(
+                      "h5",
+                      null,
+                      "Silver"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "info" },
+                    _react2.default.createElement(
+                      "label",
+                      null,
+                      "Drive"
+                    ),
+                    _react2.default.createElement(
+                      "h5",
+                      null,
+                      "Rear Wheel Drive"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "info" },
+                    _react2.default.createElement(
+                      "label",
+                      null,
+                      "Type"
+                    ),
+                    _react2.default.createElement(
+                      "h5",
+                      null,
+                      "Sedan"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "info" },
+                    _react2.default.createElement(
+                      "label",
+                      null,
+                      "Interior Color"
+                    ),
+                    _react2.default.createElement(
+                      "h5",
+                      null,
+                      "Black Leather"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "info" },
+                    _react2.default.createElement(
+                      "label",
+                      null,
+                      "Condition"
+                    ),
+                    _react2.default.createElement(
+                      "h5",
+                      null,
+                      "Like New"
                     )
                   )
                 ),
                 _react2.default.createElement(
                   "div",
-                  { className: "thumbnails" },
+                  { className: "description" },
                   _react2.default.createElement(
-                    "div",
-                    { className: "thumb-image" },
-                    "Image"
+                    "p",
+                    null,
+                    "The fully redesigned 2017 BMW 5 Series brings a slew of new features, making it one of the most technologically advanced luxury midsize cars. The 5 Series' ride emphasizes comfort, and while it's fairly composed, sportier rivals provide a more engaging driving experience."
                   )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "details-column" },
-              _react2.default.createElement(
-                "div",
-                { className: "date" },
-                "Posted: March 28th"
-              ),
-              _react2.default.createElement(
-                "h4",
-                { className: "price" },
-                "Silver 2017 BMW"
-              ),
-              _react2.default.createElement(
-                "div",
-                { className: "more-details" },
-                _react2.default.createElement(
-                  "div",
-                  { className: "info" },
-                  _react2.default.createElement(
-                    "label",
-                    null,
-                    "Vin"
-                  ),
-                  _react2.default.createElement(
-                    "h5",
-                    null,
-                    "1HHBH41JXMN109186"
-                  )
-                ),
-                _react2.default.createElement(
-                  "div",
-                  { className: "info" },
-                  _react2.default.createElement(
-                    "label",
-                    null,
-                    "Mileage"
-                  ),
-                  _react2.default.createElement(
-                    "h5",
-                    null,
-                    "5,600"
-                  )
-                ),
-                _react2.default.createElement(
-                  "div",
-                  { className: "info" },
-                  _react2.default.createElement(
-                    "label",
-                    null,
-                    "Transmission"
-                  ),
-                  _react2.default.createElement(
-                    "h5",
-                    null,
-                    "6-Speed Automatic"
-                  )
-                ),
-                _react2.default.createElement(
-                  "div",
-                  { className: "info" },
-                  _react2.default.createElement(
-                    "label",
-                    null,
-                    "Fuel"
-                  ),
-                  _react2.default.createElement(
-                    "h5",
-                    null,
-                    "Gasoline"
-                  )
-                ),
-                _react2.default.createElement(
-                  "div",
-                  { className: "info" },
-                  _react2.default.createElement(
-                    "label",
-                    null,
-                    "Exterior Color"
-                  ),
-                  _react2.default.createElement(
-                    "h5",
-                    null,
-                    "Silver"
-                  )
-                ),
-                _react2.default.createElement(
-                  "div",
-                  { className: "info" },
-                  _react2.default.createElement(
-                    "label",
-                    null,
-                    "Drive"
-                  ),
-                  _react2.default.createElement(
-                    "h5",
-                    null,
-                    "Rear Wheel Drive"
-                  )
-                ),
-                _react2.default.createElement(
-                  "div",
-                  { className: "info" },
-                  _react2.default.createElement(
-                    "label",
-                    null,
-                    "Type"
-                  ),
-                  _react2.default.createElement(
-                    "h5",
-                    null,
-                    "Sedan"
-                  )
-                ),
-                _react2.default.createElement(
-                  "div",
-                  { className: "info" },
-                  _react2.default.createElement(
-                    "label",
-                    null,
-                    "Interior Color"
-                  ),
-                  _react2.default.createElement(
-                    "h5",
-                    null,
-                    "Black Leather"
-                  )
-                ),
-                _react2.default.createElement(
-                  "div",
-                  { className: "info" },
-                  _react2.default.createElement(
-                    "label",
-                    null,
-                    "Condition"
-                  ),
-                  _react2.default.createElement(
-                    "h5",
-                    null,
-                    "Like New"
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                "div",
-                { className: "description" },
-                _react2.default.createElement(
-                  "p",
-                  null,
-                  "The fully redesigned 2017 BMW 5 Series brings a slew of new features, making it one of the most technologically advanced luxury midsize cars. The 5 Series' ride emphasizes comfort, and while it's fairly composed, sportier rivals provide a more engaging driving experience."
                 )
               )
             )

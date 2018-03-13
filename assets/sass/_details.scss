@@ -1,0 +1,36 @@
+.details-page {
+  background: #F7F8FA;
+  padding: 20px 0;
+
+  .white-box {
+    padding: 20px;
+    background: #FFF;
+  }
+  .submenu {
+    display: flex;
+    justify-content: space-between;
+
+
+    a {
+      color: #2A7DDD;
+      padding: 20px;
+      text-decoration: none;
+    }
+
+    .direction {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .sub-links {
+      display: flex;
+      flex-direction: row;
+
+    }
+  }
+  .content-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
