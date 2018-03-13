@@ -53,7 +53,8 @@ export default class Details extends Component {
               </div>
               <div className="details-column">
                 <div className="date">Posted: March 28th</div>
-                <h4 className="price">Silver 2017 BMW</h4>
+                <h3 className="title">Silver 2017 BMW</h3>
+                <h4 className="price">44,000</h4>
                 <div className="more-details">
                   <div className="info">
                     <label>Vin</label>

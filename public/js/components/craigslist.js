@@ -436,9 +436,14 @@ var Details = function (_Component) {
                   "Posted: March 28th"
                 ),
                 _react2.default.createElement(
+                  "h3",
+                  { className: "title" },
+                  "Silver 2017 BMW"
+                ),
+                _react2.default.createElement(
                   "h4",
                   { className: "price" },
-                  "Silver 2017 BMW"
+                  "44,000"
                 ),
                 _react2.default.createElement(
                   "div",
