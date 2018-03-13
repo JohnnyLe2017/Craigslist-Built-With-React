@@ -128,7 +128,7 @@
     .details-column {
       .date {
         font-size: .9rem;
-        color: #1B1B1B;
+        color: #424242;
         margin-bottom: 15px;
       }
       .title {
@@ -153,8 +153,9 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 15px;
+        padding-bottom: 30px;
         margin-bottom: 30px;
-        border-bottom: 1px solid grey;
+        border-bottom: 2px solid #F6F6F7;
         .info {
 
           h5 {
@@ -162,6 +163,14 @@
             font-weight: 400;
             text-transform: capitalize;
           }
+        }
+      }
+      .description {
+        p {
+          color: #424242;
+          font-size: 0.9rem;
+          line-height: 1.5;
+          margin-bottom: 1.5rem;
         }
       }
     }
