@@ -404,14 +404,15 @@ var Details = function (_Component) {
                       { className: "main-image" },
                       _react2.default.createElement(
                         "div",
-                        { className: "left-arrow" },
+                        { className: "arrows left-arrow" },
                         "<"
                       ),
                       _react2.default.createElement(
                         "div",
-                        { className: "left-arrow" },
+                        { className: "arrows right-arrow" },
                         ">"
-                      )
+                      ),
+                      _react2.default.createElement("div", { className: "image-1" })
                     )
                   ),
                   _react2.default.createElement(

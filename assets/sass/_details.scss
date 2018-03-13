@@ -35,6 +35,39 @@
 
     .media-column {
       .gallery {
+        .slider {
+          .main-image {
+            position: relative;
+            .arrows {
+              top: 0;
+              bottom: 0;
+              width: 80px;
+              height: 100%;
+              position: absolute;
+              background: rgba(0,0,0, .7);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 3rem;
+              color: #FFF;
+              &.left-arrow {
+                left: 0;
+              }
+              &.right-arrow {
+                right: 0;
+              }
+            }
+            .image-1 {
+              background-image: url("https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_5.jpg");
+              width: 100%;
+              height: 400px;
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;
+            }
+          }
+        }
+
         .thumbnails {
           display: grid;
           grid-template-columns: repeat(6, 1fr);

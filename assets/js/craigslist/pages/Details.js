@@ -36,17 +36,18 @@ export default class Details extends Component {
                 <div className="gallery">
                   <div className="slider">
                     <div className="main-image">
-                      <div className="left-arrow">{"<"}</div>
-                      <div className="left-arrow">{">"}</div>
+                      <div className="arrows left-arrow">{"<"}</div>
+                      <div className="arrows right-arrow">{">"}</div>
+                      <div className="image-1"></div>
                     </div>
                   </div>
                   <div className="thumbnails">
-                    <div className="thumb-image1"></div>
-                    <div className="thumb-image2"></div>
-                    <div className="thumb-image3"></div>
-                    <div className="thumb-image4"></div>
-                    <div className="thumb-image5"></div>
-                    <div className="thumb-image6"></div>
+                    <div className="thumb-image1" />
+                    <div className="thumb-image2" />
+                    <div className="thumb-image3" />
+                    <div className="thumb-image4" />
+                    <div className="thumb-image5" />
+                    <div className="thumb-image6" />
                   </div>
                 </div>
               </div>
