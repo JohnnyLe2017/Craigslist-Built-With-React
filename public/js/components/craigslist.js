@@ -417,11 +417,12 @@ var Details = function (_Component) {
                   _react2.default.createElement(
                     "div",
                     { className: "thumbnails" },
-                    _react2.default.createElement(
-                      "div",
-                      { className: "thumb-image" },
-                      "Image"
-                    )
+                    _react2.default.createElement("div", { className: "thumb-image1" }),
+                    _react2.default.createElement("div", { className: "thumb-image2" }),
+                    _react2.default.createElement("div", { className: "thumb-image3" }),
+                    _react2.default.createElement("div", { className: "thumb-image4" }),
+                    _react2.default.createElement("div", { className: "thumb-image5" }),
+                    _react2.default.createElement("div", { className: "thumb-image6" })
                   )
                 )
               ),

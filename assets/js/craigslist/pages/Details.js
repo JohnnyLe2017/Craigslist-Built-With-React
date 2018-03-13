@@ -41,7 +41,12 @@ export default class Details extends Component {
                     </div>
                   </div>
                   <div className="thumbnails">
-                    <div className="thumb-image">Image</div>
+                    <div className="thumb-image1"></div>
+                    <div className="thumb-image2"></div>
+                    <div className="thumb-image3"></div>
+                    <div className="thumb-image4"></div>
+                    <div className="thumb-image5"></div>
+                    <div className="thumb-image6"></div>
                   </div>
                 </div>
               </div>
