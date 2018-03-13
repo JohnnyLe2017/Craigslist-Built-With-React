@@ -325,7 +325,7 @@ var Details = function (_Component) {
   }
 
   _createClass(Details, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       var _props = this.props,
           match = _props.match,
@@ -333,66 +333,84 @@ var Details = function (_Component) {
           history = _props.history;
 
       return _react2.default.createElement(
-        'div',
-        { className: 'details-page' },
+        "div",
+        { className: "details-page" },
         _react2.default.createElement(
-          'div',
-          { className: 'container' },
+          "div",
+          { className: "container" },
           _react2.default.createElement(
-            'section',
-            { className: 'submenu' },
+            "section",
+            { className: "submenu" },
             _react2.default.createElement(
-              'div',
-              { className: 'direction' },
+              "div",
+              { className: "direction" },
               _react2.default.createElement(
-                'div',
-                { className: 'prev' },
-                'Prev'
+                "div",
+                { className: "prev" },
+                "Prev"
               ),
               _react2.default.createElement(
-                'div',
-                { className: 'next' },
-                'Next'
+                "div",
+                { className: "next" },
+                "Next"
               )
             ),
             _react2.default.createElement(
-              'nav',
-              { className: 'sub-links' },
+              "nav",
+              { className: "sub-links" },
               _react2.default.createElement(
-                'a',
-                { href: '#' },
-                'More Ads by User'
+                "a",
+                { href: "#" },
+                "More Ads by User"
               ),
               _react2.default.createElement(
-                'a',
-                { href: '#' },
-                'Print'
+                "a",
+                { href: "#" },
+                "Print"
               ),
               _react2.default.createElement(
-                'a',
-                { href: '#' },
-                'Share'
+                "a",
+                { href: "#" },
+                "Share"
               ),
               _react2.default.createElement(
-                'a',
-                { href: '#' },
-                'Contact Seller'
+                "a",
+                { href: "#" },
+                "Contact Seller"
               )
             )
           ),
           _react2.default.createElement(
-            'section',
+            "section",
             null,
             _react2.default.createElement(
-              'div',
-              { className: 'media-column' },
+              "div",
+              { className: "media-column" },
               _react2.default.createElement(
-                'div',
-                { className: 'gallery' },
-                _react2.default.createElement('div', { className: 'main-image' })
+                "div",
+                { className: "gallery" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "slider" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "main-image" },
+                    _react2.default.createElement(
+                      "div",
+                      { className: "left-arrow" },
+                      "<"
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "left-arrow" },
+                      ">"
+                    )
+                  )
+                ),
+                _react2.default.createElement("div", { className: "thumbnails" })
               )
             ),
-            _react2.default.createElement('div', { className: 'details-column' })
+            _react2.default.createElement("div", { className: "details-column" })
           )
         )
       );
