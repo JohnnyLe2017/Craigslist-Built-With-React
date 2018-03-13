@@ -7913,7 +7913,7 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 3221225786
+  Exit code: 1
   Command: C:\Windows\system32\cmd.exe
   Arguments: /d /s /c gulp
   Directory: G:\Web Development\GitHub\Craigslist-Built-With-React

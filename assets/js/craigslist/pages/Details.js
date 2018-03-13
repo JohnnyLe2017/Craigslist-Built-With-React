@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import Gallery from './components/Gallery.js'
 
 export default class Details extends Component {
   constructor() {
@@ -33,24 +34,8 @@ export default class Details extends Component {
 
             <section className="content-area">
               <div className="media-column">
-                <div className="gallery">
-                  <div className="slider">
-                    <div className="main-image">
-                      <div className="arrows left-arrow">{"<"}</div>
-                      <div className="arrows right-arrow">{">"}</div>
-                      <div className="image-1"></div>
-                    </div>
-                  </div>
-                  <div className="thumbnails">
-                    <div className="thumb-image1" />
-                    <div className="thumb-image2" />
-                    <div className="thumb-image3" />
-                    <div className="thumb-image4" />
-                    <div className="thumb-image5" />
-                    <div className="thumb-image6" />
-                  </div>
+                <Gallery />
                 </div>
-              </div>
               <div className="details-column">
                 <div className="date">Posted: March 28th</div>
                 <h3 className="title">Silver 2017 BMW</h3>
@@ -108,6 +93,6 @@ export default class Details extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
