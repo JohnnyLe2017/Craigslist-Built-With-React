@@ -1,23 +1,20 @@
-import React, { Component} from 'react'
-import ReactDOM from 'react-dom'
-
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
 
 export default class Category extends Component {
-  constructor () {
-    super()
-    this.state = {
-
-    }
+  constructor() {
+    super();
+    this.state = {};
   }
 
-  render () {
-    const {match, location, history} = this.props
+  render() {
+    const { match, location, history } = this.props;
     return (
       <div className="category">
-      <div className="container">
-      This category is {match.params.category}
+        <div className="container">
+          This category is {match.params.category}
+        </div>
       </div>
-      </div>
-    )
-    }
+    );
+  }
 }
