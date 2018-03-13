@@ -81,6 +81,15 @@ export default class Details extends Component {
                   <h5>Like New</h5>
                 </div>
               </div>
+              <div className="description">
+                <p>
+                  The fully redesigned 2017 BMW 5 Series brings a slew of new
+                  features, making it one of the most technologically advanced
+                  luxury midsize cars. The 5 Series' ride emphasizes comfort,
+                  and while it's fairly composed, sportier rivals provide a more
+                  engaging driving experience.
+                </p>
+              </div>
             </div>
           </section>
         </div>
