@@ -411,7 +411,15 @@ var Details = function (_Component) {
                     )
                   )
                 ),
-                _react2.default.createElement("div", { className: "thumbnails" })
+                _react2.default.createElement(
+                  "div",
+                  { className: "thumbnails" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "thumb-image" },
+                    "Image"
+                  )
+                )
               )
             ),
             _react2.default.createElement("div", { className: "details-column" })

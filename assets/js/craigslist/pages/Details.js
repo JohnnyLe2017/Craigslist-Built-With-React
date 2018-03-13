@@ -35,10 +35,13 @@ export default class Details extends Component {
                     <div className="left-arrow">{">"}</div>
                   </div>
                 </div>
-                <div className="thumbnails" />
+                <div className="thumbnails">
+                <div className="thumb-image">Image</div>
+                </div>
               </div>
             </div>
-            <div className="details-column" />
+            <div className="details-column">
+            </div>
           </section>
         </div>
       </div>
