@@ -37,7 +37,7 @@ export default class Gallery extends Component {
                     <div className="arrows right-arrow">{">"}</div>
                       <div className="image-1" style={{
                              "backgroundImage": `url('${this.state.allImages[0]}')`
-                      }}</div>
+                      }}></div>
                   </div>
                 </div>
                 <div className="thumbnails">

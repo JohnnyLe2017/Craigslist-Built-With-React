@@ -16,7 +16,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(14);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -109,7 +109,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(14);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -144,7 +144,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(14);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -236,7 +236,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(14);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -304,7 +304,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(14);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -592,7 +592,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(14);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -772,7 +772,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(14);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -1000,9 +1000,101 @@ exports.default = Listings;
 /***/ }),
 
 /***/ 124:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: SyntaxError: G:/Web Development/GitHub/Craigslist-Built-With-React/assets/js/craigslist/pages/components/Gallery.js: Unexpected token (40:24)\n\n\u001b[0m \u001b[90m 38 | \u001b[39m                      \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"image-1\"\u001b[39m style\u001b[33m=\u001b[39m{{\n \u001b[90m 39 | \u001b[39m                             \u001b[32m\"backgroundImage\"\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`url('${this.state.allImages[0]}')`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 | \u001b[39m                      }}\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mdiv\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m    | \u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 | \u001b[39m                  \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mdiv\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 42 | \u001b[39m                \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mdiv\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 43 | \u001b[39m                \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"thumbnails\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n");
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(14);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Gallery = function (_Component) {
+  _inherits(Gallery, _Component);
+
+  function Gallery() {
+    _classCallCheck(this, Gallery);
+
+    var _this = _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this));
+
+    _this.allImagesLoop = function () {
+      console.log(_this.state.allImages);
+      return _this.state.allImages.map(function (item, i) {
+        return _react2.default.createElement("div", { key: i, className: "thumb-image", style: {
+            "backgroundImage": "url('" + item + "')"
+          } });
+      });
+    };
+
+    _this.state = {
+      allImages: ['https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_5.jpg', 'https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_6.jpg', 'https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_7.jpg', 'https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_12.jpg', 'https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_13.jpg', 'https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_14.jpg']
+    };
+    return _this;
+  }
+
+  _createClass(Gallery, [{
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          match = _props.match,
+          location = _props.location,
+          history = _props.history;
+
+      return _react2.default.createElement(
+        "div",
+        { className: "gallery" },
+        _react2.default.createElement(
+          "div",
+          { className: "slider" },
+          _react2.default.createElement(
+            "div",
+            { className: "main-image" },
+            _react2.default.createElement(
+              "div",
+              { className: "arrows left-arrow" },
+              "<"
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "arrows right-arrow" },
+              ">"
+            ),
+            _react2.default.createElement("div", { className: "image-1", style: {
+                "backgroundImage": "url('" + this.state.allImages[0] + "')"
+              } })
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "thumbnails" },
+          this.allImagesLoop()
+        )
+      );
+    }
+  }]);
+
+  return Gallery;
+}(_react.Component);
+
+exports.default = Gallery;
 
 /***/ })
 
