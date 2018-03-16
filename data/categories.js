@@ -98,4 +98,58 @@ module.export = [
 
     ]
   },
+  {
+    title: "jobs",
+    listings: [
+      {
+        name: "accounting / finance",
+        slug: "accounting-or-finance"
+      },
+      {
+        name: "arch / engineering",
+        slug: "arch-or-engineering"
+      },
+      {
+        name: "art / media / design",
+        slug: "art-or-media-or-design"
+      },
+      {
+        name: "biotech / science",
+        slug: "biotech-or-science"
+      },
+      {
+        name: "business / mgmt",
+        slug: "business-or-mgmt"
+      },
+      {
+        name: "customer service",
+        slug: "customer-service"
+      },
+      {
+        name: "education",
+        slug: "education"
+      },
+      {
+        name: "food / bev / hosp",
+        slug: "food-or-bev-or-hosp"
+      },
+      {
+        name: "general labor",
+        slug: "general-labor"
+      },
+      {
+        name: "government",
+        slug: "government"
+      },
+      {
+        name: "human resources",
+        slug: "human-resources"
+      },
+      {
+        name: "internet engineers",
+        slug: "internet-engineers"
+      },
+
+    ]
+  },
 ]
