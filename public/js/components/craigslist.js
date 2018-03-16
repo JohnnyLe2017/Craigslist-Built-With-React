@@ -1045,15 +1045,19 @@ var Gallery = function (_Component) {
     };
 
     _this.nextBtn = function () {
-      _this.setState({
-        currentIndex: _this.state.currentIndex + 1
-      });
+      if (_this.state.currentIndex != _this.state.allImages.length - 1) {
+        _this.setState({
+          currentIndex: _this.state.currentIndex + 1
+        });
+      }
     };
 
     _this.prevBtn = function () {
-      _this.setState({
-        currentIndex: _this.state.currentIndex - 1
-      });
+      if (_this.state.currentIndex != 0) {
+        _this.setState({
+          currentIndex: _this.state.currentIndex - 1
+        });
+      }
     };
 
     _this.state = {
