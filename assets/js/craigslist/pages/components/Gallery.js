@@ -31,7 +31,7 @@ export default class Gallery extends Component {
     console.log(this.state.allImages)
 	return this.state.allImages.map((item, i) => {
 	return(
-		<div key={i} className="thumb-image" style={{
+		<div key={i} onClick={this.clickedThumb.bind(null, i)} className="thumb-image" style={{
 			"backgroundImage": `url('${item}')`
     }}></div>
 	)
@@ -54,14 +54,24 @@ export default class Gallery extends Component {
     }
   }
 
+  clickedThumb = (index) => {
+    this.setState({
+      currentIndex: index
+    })
+  }
+
   render() {
     const { match, location, history } = this.props
     return (
               <div className="gallery">
                 <div className="slider">
                   <div className="main-image">
-                    <div className="arrows left-arrow" onClick={this.prevBtn}>{"<"}</div>
-                    <div className="arrows right-arrow" onClick={this.nextBtn}>{">"}</div>
+                    <div className="arrows left-arrow" onClick={this.prevBtn}>
+                      <i className="fa fa-chevron-circle-left" aria-hidden="true"></i>
+                      </div>
+                    <div className="arrows right-arrow" onClick={this.nextBtn}>
+                      <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                      </div>
                       <div className="image-1" style={{
                              "backgroundImage": `url('${this.state.allImages[this.state.currentIndex]}')`
                       }}></div>

@@ -1038,7 +1038,7 @@ var Gallery = function (_Component) {
     _this.allImagesLoop = function () {
       console.log(_this.state.allImages);
       return _this.state.allImages.map(function (item, i) {
-        return _react2.default.createElement("div", { key: i, className: "thumb-image", style: {
+        return _react2.default.createElement("div", { key: i, onClick: _this.clickedThumb.bind(null, i), className: "thumb-image", style: {
             "backgroundImage": "url('" + item + "')"
           } });
       });
@@ -1058,6 +1058,12 @@ var Gallery = function (_Component) {
           currentIndex: _this.state.currentIndex - 1
         });
       }
+    };
+
+    _this.clickedThumb = function (index) {
+      _this.setState({
+        currentIndex: index
+      });
     };
 
     _this.state = {
@@ -1098,12 +1104,12 @@ var Gallery = function (_Component) {
             _react2.default.createElement(
               "div",
               { className: "arrows left-arrow", onClick: this.prevBtn },
-              "<"
+              _react2.default.createElement("i", { className: "fa fa-chevron-circle-left", "aria-hidden": "true" })
             ),
             _react2.default.createElement(
               "div",
               { className: "arrows right-arrow", onClick: this.nextBtn },
-              ">"
+              _react2.default.createElement("i", { className: "fa fa-arrow-circle-right", "aria-hidden": "true" })
             ),
             _react2.default.createElement("div", { className: "image-1", style: {
                 "backgroundImage": "url('" + this.state.allImages[this.state.currentIndex] + "')"
