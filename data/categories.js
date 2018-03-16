@@ -1,275 +1,275 @@
 module.export = [
   {
-    title: "community",
+    title: 'community',
     listings: [
       {
-        name: "activities",
-        slug: "activities"
+        name: 'activities',
+        slug: 'activities'
       },
       {
-        name: "artists",
-        slug: "artists"
+        name: 'artists',
+        slug: 'artists'
       },
       {
-        name: "childcare",
-        slug: "childcare"
+        name: 'childcare',
+        slug: 'childcare'
       },
       {
-        name: "classes",
-        slug: "classes"
+        name: 'classes',
+        slug: 'classes'
       },
       {
-        name: "events",
-        slug: "events"
+        name: 'events',
+        slug: 'events'
       },
       {
-        name: "general",
-        slug: "general"
+        name: 'general',
+        slug: 'general'
       },
       {
-        name: "groups",
-        slug: "groups"
+        name: 'groups',
+        slug: 'groups'
       },
       {
-        name: "local-news",
-        slug: "local-news"
+        name: 'local-news',
+        slug: 'local-news'
       },
       {
-        name: "lost+found",
-        slug: "lost-and-found"
+        name: 'lost+found',
+        slug: 'lost-and-found'
       },
       {
-        name: "musicians",
-        slug: "musicians"
+        name: 'musicians',
+        slug: 'musicians'
       },
       {
-        name: "pets",
-        slug: "pets"
+        name: 'pets',
+        slug: 'pets'
       },
       {
-        name: "politics",
-        slug: "politics"
+        name: 'politics',
+        slug: 'politics'
       },
       {
-        name: "rideshare",
-        slug: "rideshare"
+        name: 'rideshare',
+        slug: 'rideshare'
       },
       {
-        name: "volunteers",
-        slug: "volunteers"
+        name: 'volunteers',
+        slug: 'volunteers'
       }
     ]
   },
   {
-    title: "housing",
+    title: 'housing',
     listings: [
       {
-        name: "apts / housing",
-        slug: "apts-or-housing"
+        name: 'apts / housing',
+        slug: 'apts-or-housing'
       },
       {
-        name: "housing swap",
-        slug: "housing-swap"
+        name: 'housing swap',
+        slug: 'housing-swap'
       },
       {
-        name: "housing wanted",
-        slug: "housing-wanted"
+        name: 'housing wanted',
+        slug: 'housing-wanted'
       },
       {
-        name: "office / commercial",
-        slug: "office-or-commercial"
+        name: 'office / commercial',
+        slug: 'office-or-commercial'
       },
       {
-        name: "parking / storage",
-        slug: "parking-or-storage"
+        name: 'parking / storage',
+        slug: 'parking-or-storage'
       },
       {
-        name: "real estate for sale",
-        slug: "real-estate-for-sale"
+        name: 'real estate for sale',
+        slug: 'real-estate-for-sale'
       },
       {
-        name: "rooms / shared",
-        slug: "rooms-or-shared"
+        name: 'rooms / shared',
+        slug: 'rooms-or-shared'
       },
       {
-        name: "rooms wanted",
-        slug: "rooms-wanted"
+        name: 'rooms wanted',
+        slug: 'rooms-wanted'
       }
 
     ]
   },
   {
-    title: "jobs",
+    title: 'jobs',
     listings: [
       {
-        name: "accounting / finance",
-        slug: "accounting-or-finance"
+        name: 'accounting / finance',
+        slug: 'accounting-or-finance'
       },
       {
-        name: "arch / engineering",
-        slug: "arch-or-engineering"
+        name: 'arch / engineering',
+        slug: 'arch-or-engineering'
       },
       {
-        name: "art / media / design",
-        slug: "art-or-media-or-design"
+        name: 'art / media / design',
+        slug: 'art-or-media-or-design'
       },
       {
-        name: "biotech / science",
-        slug: "biotech-or-science"
+        name: 'biotech / science',
+        slug: 'biotech-or-science'
       },
       {
-        name: "business / mgmt",
-        slug: "business-or-mgmt"
+        name: 'business / mgmt',
+        slug: 'business-or-mgmt'
       },
       {
-        name: "customer service",
-        slug: "customer-service"
+        name: 'customer service',
+        slug: 'customer-service'
       },
       {
-        name: "education",
-        slug: "education"
+        name: 'education',
+        slug: 'education'
       },
       {
-        name: "food / bev / hosp",
-        slug: "food-or-bev-or-hosp"
+        name: 'food / bev / hosp',
+        slug: 'food-or-bev-or-hosp'
       },
       {
-        name: "general labor",
-        slug: "general-labor"
+        name: 'general labor',
+        slug: 'general-labor'
       },
       {
-        name: "government",
-        slug: "government"
+        name: 'government',
+        slug: 'government'
       },
       {
-        name: "human resources",
-        slug: "human-resources"
+        name: 'human resources',
+        slug: 'human-resources'
       },
       {
-        name: "internet engineers",
-        slug: "internet-engineers"
+        name: 'internet engineers',
+        slug: 'internet-engineers'
       },
       {
-        name: "legal / paralegal",
-        slug: "legal-or-paralegal"
+        name: 'legal / paralegal',
+        slug: 'legal-or-paralegal'
       },
       {
-        name: "manufacturing",
-        slug: "manufacturing"
+        name: 'manufacturing',
+        slug: 'manufacturing'
       },
       {
-        name: "marketing / pr / ad",
-        slug: "marketing-or-pr-or-ad"
+        name: 'marketing / pr / ad',
+        slug: 'marketing-or-pr-or-ad'
       },
       {
-        name: "medical / health",
-        slug: "medical-or-health"
+        name: 'medical / health',
+        slug: 'medical-or-health'
       },
       {
-        name: "nonprofit sector",
-        slug: "nonprofit-sector"
+        name: 'nonprofit sector',
+        slug: 'nonprofit-sector'
       },
       {
-        name: "real estate",
-        slug: "real-estate"
+        name: 'real estate',
+        slug: 'real-estate'
       },
       {
-        name: "retail / wholesale",
-        slug: "retail-or-wholesale"
+        name: 'retail / wholesale',
+        slug: 'retail-or-wholesale'
       },
       {
-        name: "sales / biz dev",
-        slug: "sales-or-biz-dev"
+        name: 'sales / biz dev',
+        slug: 'sales-or-biz-dev'
       },
       {
-        name: "salon / spa / fitness",
-        slug: "salon-or-spa-or-fitness"
+        name: 'salon / spa / fitness',
+        slug: 'salon-or-spa-or-fitness'
       },
       {
-        name: "security",
-        slug: "security"
+        name: 'security',
+        slug: 'security'
       },
       {
-        name: "skilled trade / craft",
-        slug: "skilled-trade-or-craft"
+        name: 'skilled trade / craft',
+        slug: 'skilled-trade-or-craft'
       },
       {
-        name: "software / qa / dba",
-        slug: "software-or-qa-or-dba"
+        name: 'software / qa / dba',
+        slug: 'software-or-qa-or-dba'
       },
       {
-        name: "systems / network",
-        slug: "systems-or-network"
+        name: 'systems / network',
+        slug: 'systems-or-network'
       },
       {
-        name: "technical support",
-        slug: "technical-support"
+        name: 'technical support',
+        slug: 'technical-support'
       },
       {
-        name: "transport",
-        slug: "transport"
+        name: 'transport',
+        slug: 'transport'
       },
       {
-        name: "transport",
-        slug: "transport"
+        name: 'transport',
+        slug: 'transport'
       },
       {
-        name: "tv / film / video",
-        slug: "tv-or-film-or-video"
+        name: 'tv / film / video',
+        slug: 'tv-or-film-or-video'
       },
       {
-        name: "web / info design",
-        slug: "web-or-info-design"
+        name: 'web / info design',
+        slug: 'web-or-info-design'
       },
       {
-        name: "writing / editing",
-        slug: "writing-or-editing"
+        name: 'writing / editing',
+        slug: 'writing-or-editing'
       },
       {
-        name: "part-time",
-        slug: "part-time"
-      },
+        name: 'part-time',
+        slug: 'part-time'
+      }
 
     ]
   },
   {
-    title: "personals",
+    title: 'personals',
     listings: [
       {
-        name: "strictly platonic",
-        slug: "strictly-platonic"
+        name: 'strictly platonic',
+        slug: 'strictly-platonic'
       },
       {
-        name: "women seek women",
-        slug: "women-seek-women"
+        name: 'women seek women',
+        slug: 'women-seek-women'
       },
       {
-        name: "women seeking men",
-        slug: "women-seeking-men"
+        name: 'women seeking men',
+        slug: 'women-seeking-men'
       },
       {
-        name: "men seeking women",
-        slug: "men-seeking-women"
+        name: 'men seeking women',
+        slug: 'men-seeking-women'
       },
       {
-        name: "men seeking men",
-        slug: "men-seeking-men"
+        name: 'men seeking men',
+        slug: 'men-seeking-men'
       },
       {
-        name: "misc romance",
-        slug: "misc-romance"
+        name: 'misc romance',
+        slug: 'misc-romance'
       },
       {
-        name: "casual encounters",
-        slug: "casual-encounters"
+        name: 'casual encounters',
+        slug: 'casual-encounters'
       },
       {
-        name: "missed connections",
-        slug: "missed-connections"
+        name: 'missed connections',
+        slug: 'missed-connections'
       },
       {
-        name: "rants and raves",
-        slug: "rants-and-raves"
+        name: 'rants and raves',
+        slug: 'rants-and-raves'
       }
 
     ]
