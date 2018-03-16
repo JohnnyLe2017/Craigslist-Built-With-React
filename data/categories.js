@@ -274,4 +274,41 @@ module.export = [
 
     ]
   },
+  {
+    title: 'for sale',
+    listings: [
+      {
+        name: 'antiques',
+        slug: 'antiques'
+      },
+      {
+        name: 'appliances',
+        slug: 'appliances'
+      },
+      {
+        name: 'arts+crafts',
+        slug: 'arts-and-crafts'
+      },
+      {
+        name: 'auto parts',
+        slug: 'auto-parts'
+      },
+      {
+        name: 'baby+kid',
+        slug: 'baby-and-kid'
+      },
+      {
+        name: 'barter',
+        slug: 'barter'
+      },
+      {
+        name: 'bikes',
+        slug: 'bikes'
+      },
+      {
+        name: 'boats',
+        slug: 'boats'
+      }
+    ]
+  },
 ]
