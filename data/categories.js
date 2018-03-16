@@ -35,7 +35,7 @@ module.export = [
         slug: "local-news"
       },
       {
-        name: "lost-and-found",
+        name: "lost+found",
         slug: "lost-and-found"
       },
       {
@@ -229,6 +229,48 @@ module.export = [
         name: "part-time",
         slug: "part-time"
       },
+
+    ]
+  },
+  {
+    title: "personals",
+    listings: [
+      {
+        name: "strictly platonic",
+        slug: "strictly-platonic"
+      },
+      {
+        name: "women seek women",
+        slug: "women-seek-women"
+      },
+      {
+        name: "women seeking men",
+        slug: "women-seeking-men"
+      },
+      {
+        name: "men seeking women",
+        slug: "men-seeking-women"
+      },
+      {
+        name: "men seeking men",
+        slug: "men-seeking-men"
+      },
+      {
+        name: "misc romance",
+        slug: "misc-romance"
+      },
+      {
+        name: "casual encounters",
+        slug: "casual-encounters"
+      },
+      {
+        name: "missed connections",
+        slug: "missed-connections"
+      },
+      {
+        name: "rants and raves",
+        slug: "rants-and-raves"
+      }
 
     ]
   },
