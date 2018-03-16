@@ -1044,13 +1044,37 @@ var Gallery = function (_Component) {
       });
     };
 
+    _this.nextBtn = function () {
+      _this.setState({
+        currentIndex: _this.state.currentIndex + 1
+      });
+    };
+
+    _this.prevBtn = function () {
+      _this.setState({
+        currentIndex: _this.state.currentIndex - 1
+      });
+    };
+
     _this.state = {
-      allImages: ['https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_5.jpg', 'https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_6.jpg', 'https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_7.jpg', 'https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_12.jpg', 'https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_13.jpg', 'https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_14.jpg']
+      allImages: '',
+      currentImage: '',
+      currentIndex: 0
     };
     return _this;
   }
 
   _createClass(Gallery, [{
+    key: "componentWillMount",
+    value: function componentWillMount() {
+      var allImages = ['https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_5.jpg', 'https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_6.jpg', 'https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_7.jpg', 'https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_12.jpg', 'https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_13.jpg', 'https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_14.jpg'];
+
+      this.setState({
+        allImages: allImages,
+        currentImage: allImages[this.state.currentIndex]
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       var _props = this.props,
@@ -1069,16 +1093,16 @@ var Gallery = function (_Component) {
             { className: "main-image" },
             _react2.default.createElement(
               "div",
-              { className: "arrows left-arrow" },
+              { className: "arrows left-arrow", onClick: this.prevBtn },
               "<"
             ),
             _react2.default.createElement(
               "div",
-              { className: "arrows right-arrow" },
+              { className: "arrows right-arrow", onClick: this.nextBtn },
               ">"
             ),
             _react2.default.createElement("div", { className: "image-1", style: {
-                "backgroundImage": "url('" + this.state.allImages[0] + "')"
+                "backgroundImage": "url('" + this.state.allImages[this.state.currentIndex] + "')"
               } })
           )
         ),
