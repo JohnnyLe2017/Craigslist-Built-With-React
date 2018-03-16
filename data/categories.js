@@ -149,6 +149,86 @@ module.export = [
         name: "internet engineers",
         slug: "internet-engineers"
       },
+      {
+        name: "legal / paralegal",
+        slug: "legal-or-paralegal"
+      },
+      {
+        name: "manufacturing",
+        slug: "manufacturing"
+      },
+      {
+        name: "marketing / pr / ad",
+        slug: "marketing-or-pr-or-ad"
+      },
+      {
+        name: "medical / health",
+        slug: "medical-or-health"
+      },
+      {
+        name: "nonprofit sector",
+        slug: "nonprofit-sector"
+      },
+      {
+        name: "real estate",
+        slug: "real-estate"
+      },
+      {
+        name: "retail / wholesale",
+        slug: "retail-or-wholesale"
+      },
+      {
+        name: "sales / biz dev",
+        slug: "sales-or-biz-dev"
+      },
+      {
+        name: "salon / spa / fitness",
+        slug: "salon-or-spa-or-fitness"
+      },
+      {
+        name: "security",
+        slug: "security"
+      },
+      {
+        name: "skilled trade / craft",
+        slug: "skilled-trade-or-craft"
+      },
+      {
+        name: "software / qa / dba",
+        slug: "software-or-qa-or-dba"
+      },
+      {
+        name: "systems / network",
+        slug: "systems-or-network"
+      },
+      {
+        name: "technical support",
+        slug: "technical-support"
+      },
+      {
+        name: "transport",
+        slug: "transport"
+      },
+      {
+        name: "transport",
+        slug: "transport"
+      },
+      {
+        name: "tv / film / video",
+        slug: "tv-or-film-or-video"
+      },
+      {
+        name: "web / info design",
+        slug: "web-or-info-design"
+      },
+      {
+        name: "writing / editing",
+        slug: "writing-or-editing"
+      },
+      {
+        name: "part-time",
+        slug: "part-time"
+      },
 
     ]
   },
