@@ -16,7 +16,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -109,7 +109,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -144,7 +144,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -236,7 +236,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -304,7 +304,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -577,182 +577,9 @@ exports.default = Details;
 /***/ }),
 
 /***/ 122:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(5);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(14);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Home = function (_Component) {
-  _inherits(Home, _Component);
-
-  function Home() {
-    _classCallCheck(this, Home);
-
-    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this));
-
-    _this.clickedBtn = function () {
-      console.log("swag");
-    };
-
-    _this.loopCategories = function () {
-      var testArray = [1, 2, 3, 4, 5, 6, 7];
-      return testArray.map(function (item, i) {
-        return _react2.default.createElement(
-          "div",
-          { className: "categories", key: i },
-          _react2.default.createElement(
-            "div",
-            { className: "title" },
-            "Community"
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "group-links" },
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Community"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "General"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Activities"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Groups"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Local News"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Childcare"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Lost & Found"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Classes"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Musicians"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Events"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Pets"
-            )
-          )
-        );
-      });
-    };
-
-    _this.loopTags = function () {
-      var testTags = ["a", "b", "c", "d", "e", "f", "g"];
-      return testTags.map(function (item, i) {
-        return _react2.default.createElement(
-          "div",
-          { key: i, className: "tag" },
-          "Apple Macbook"
-        );
-      });
-    };
-
-    _this.state = {
-      name: "Johnny"
-    };
-    return _this;
-  }
-
-  _createClass(Home, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "div",
-        { className: "home" },
-        _react2.default.createElement(
-          "div",
-          { className: "container" },
-          _react2.default.createElement(
-            "h1",
-            null,
-            "Connecting People ",
-            _react2.default.createElement("br", null),
-            " Everywhere :)"
-          ),
-          _react2.default.createElement(
-            "section",
-            { className: "links" },
-            this.loopCategories()
-          ),
-          _react2.default.createElement(
-            "section",
-            { className: "trending" },
-            _react2.default.createElement("input", { type: "text", name: "search", className: "search" }),
-            _react2.default.createElement(
-              "div",
-              { className: "title" },
-              _react2.default.createElement("i", { className: "far fa-clock" }),
-              " TRENDING NOW"
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "trending-tags" },
-              this.loopTags()
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Home;
-}(_react.Component);
-
-exports.default = Home;
+throw new Error("Module build failed: SyntaxError: Unexpected token (13:7)\n\n\u001b[0m \u001b[90m 11 | \u001b[39m  }\n \u001b[90m 12 | \u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 | \u001b[39m  axios\u001b[33m.\u001b[39mget(\u001b[32m'/api/categories'\u001b[39m)\n \u001b[90m    | \u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 | \u001b[39m  \u001b[33m.\u001b[39mthen(\u001b[36mfunction\u001b[39m (response) {\n \u001b[90m 15 | \u001b[39m    console\u001b[33m.\u001b[39mlog(response)\u001b[33m;\u001b[39m\n \u001b[90m 16 | \u001b[39m  })\u001b[0m\n");
 
 /***/ }),
 
@@ -772,7 +599,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -1015,7 +842,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(14);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 

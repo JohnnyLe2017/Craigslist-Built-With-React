@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import axios from 'axios'
 
 export default class Home extends Component {
   constructor() {
@@ -8,8 +9,19 @@ export default class Home extends Component {
       name: "Johnny"
     };
   }
+
+  componentWillMount() {
+    axios.get('/api/categories')
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }
+
   clickedBtn = () => {
-    console.log("swag");
+    console.log("");
   };
 
   loopCategories = () => {
