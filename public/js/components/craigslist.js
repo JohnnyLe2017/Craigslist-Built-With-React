@@ -621,77 +621,28 @@ var Home = function (_Component) {
     };
 
     _this.loopCategories = function () {
-      var testArray = [1, 2, 3, 4, 5, 6, 7];
-      return testArray.map(function (item, i) {
-        return _react2.default.createElement(
-          "div",
-          { className: "categories", key: i },
-          _react2.default.createElement(
+      if (_this.state.categoriesData != '') {
+        return _this.state.categoriesData.map(function (category, i) {
+          return _react2.default.createElement(
             "div",
-            { className: "title" },
-            "Community"
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "group-links" },
+            { className: "categories", key: i },
             _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Community"
+              "div",
+              { className: "title" },
+              category.title
             ),
             _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "General"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Activities"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Groups"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Local News"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Childcare"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Lost & Found"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Classes"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Musicians"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Events"
-            ),
-            _react2.default.createElement(
-              "a",
-              { href: "#", className: "link" },
-              "Pets"
+              "div",
+              { className: "group-links" },
+              _react2.default.createElement(
+                "a",
+                { href: "#", className: "link" },
+                "Community"
+              )
             )
-          )
-        );
-      });
+          );
+        });
+      }
     };
 
     _this.loopTags = function () {
@@ -706,8 +657,8 @@ var Home = function (_Component) {
     };
 
     _this.state = {
-      name: "Johnny"
-
+      name: "Johnny",
+      categoriesData: ''
     };
     return _this;
   }
