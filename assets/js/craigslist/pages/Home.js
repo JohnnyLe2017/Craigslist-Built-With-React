@@ -32,19 +32,32 @@ export default class Home extends Component {
   }
 
   loopCategories = () => {
+    // if statement for data
     if(this.state.categoriesData != '') {
+      // return back the loop of categories
       return this.state.categoriesData.map((category, i) => {
+        // created a loop for the listings
+        const loopListings = () => {
+          return category.listings.map((listing, index) => {
+            return (
+              <a href={`${category.title}/${listing.slug}`} className="link" key={index>
+                {listing.name}
+              </a>
+            )
+          })
+        }
+
         return (
           <div className="categories" key={i}>
             <div className="title">{category.title}</div>
             <div className="group-links">
-              <a href="#" className="link">
-                Community
-              </a>
+              {loopListings()}
               </div>
           </div>
         );
       });
+    } else {
+      return 'LOADING'
     }
   };
 
