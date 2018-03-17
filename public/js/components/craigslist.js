@@ -706,8 +706,8 @@ var Home = function (_Component) {
     };
 
     _this.state = {
-      name: "Johnny",
-      categoriesData: categoriesData
+      name: "Johnny"
+
     };
     return _this;
   }

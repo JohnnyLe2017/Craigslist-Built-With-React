@@ -4,18 +4,18 @@ import axios from 'axios'
 
 export default class Home extends Component {
   constructor() {
-    super();
+    super()
     this.state = {
       name: "Johnny",
-      categoriesData
-    };
+      
+    }
   }
 
   componentWillMount() {
     const self = this;
     axios.get('/api/categories')
     .then(function (response) {
-      self.setState( {
+      self.setState({
         categoriesData: response.data
       }, () => {
         console.log(self.state);
@@ -29,7 +29,7 @@ export default class Home extends Component {
 
   clickedBtn = () => {
     console.log("");
-  };
+  }
 
   loopCategories = () => {
     let testArray = [1, 2, 3, 4, 5, 6, 7];
