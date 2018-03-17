@@ -6,14 +6,21 @@ export default class Home extends Component {
   constructor() {
     super();
     this.state = {
-      name: "Johnny"
+      name: "Johnny",
+      categoriesData
     };
   }
 
   componentWillMount() {
+    const self = this;
     axios.get('/api/categories')
     .then(function (response) {
-      console.log(response);
+      self.setState( {
+        categoriesData: response.data
+      }, () => {
+        console.log(self.state);
+      })
+
     })
     .catch(function (error) {
       console.log(error);
