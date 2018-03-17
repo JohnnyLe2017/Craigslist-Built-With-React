@@ -1,4 +1,4 @@
-module.export = [
+module.exports = [
   {
     title: 'community',
     listings: [
@@ -311,4 +311,111 @@ module.export = [
       }
     ]
   },
+  {
+    title: 'discussion forums',
+    listings: [
+      {
+        name: 'apple',
+        slug: 'apple'
+      },
+      {
+        name: 'arts',
+        slug: 'arts'
+      },
+      {
+        name: 'autos',
+        slug: 'autos'
+      },
+      {
+        name: 'beauty',
+        slug: 'beauty'
+      },
+      {
+        name: 'bikes',
+        slug: 'bikes'
+      },
+      {
+        name: 'celebs',
+        slug: 'celebs'
+      },
+      {
+        name: 'comp',
+        slug: 'comp'
+      },
+      {
+        name: 'crafts',
+        slug: 'crafts'
+      }
+    ]
+  },
+  {
+    title: 'services',
+    listings: [
+      {
+        name: 'automotive',
+        slug: 'automotive'
+      },
+      {
+        name: 'cell / mobile',
+        slug: 'cell-or-mobile'
+      },
+      {
+        name: 'computer',
+        slug: 'computer'
+      },
+      {
+        name: 'creative',
+        slug: 'creative'
+      },
+      {
+        name: 'cycle',
+        slug: 'cycle'
+      },
+      {
+        name: 'event',
+        slug: 'event'
+      },
+      {
+        name: 'farm+garden',
+        slug: 'farm-and-garden'
+      },
+      {
+        name: 'financial',
+        slug: 'financial'
+      }
+    ]
+  },
+  {
+    title: 'gigs',
+    listings: [
+      {
+        name: 'computer',
+        slug: 'creative'
+      },
+      {
+        name: 'crew',
+        slug: 'crew'
+      },
+      {
+        name: 'domestic',
+        slug: 'domestic'
+      },
+      {
+        name: 'event',
+        slug: 'event'
+      },
+      {
+        name: 'labor',
+        slug: 'labor'
+      },
+      {
+        name: 'talent',
+        slug: 'writing'
+      }
+    ]
+  },
+  {
+    title: 'resume',
+    listings: [{}]
+  }
 ]
