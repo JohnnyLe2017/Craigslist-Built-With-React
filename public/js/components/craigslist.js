@@ -689,6 +689,17 @@ var Home = function (_Component) {
       });
     }
   }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _props = this.props,
+          match = _props.match,
+          history = _props.history;
+
+      if (match.params.city == undefined) {
+        history.push('nyc');
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       return _react2.default.createElement(
