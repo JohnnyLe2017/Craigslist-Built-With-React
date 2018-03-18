@@ -31,11 +31,11 @@ module.exports = [
         slug: 'groups'
       },
       {
-        name: 'local-news',
+        name: 'local news',
         slug: 'local-news'
       },
       {
-        name: 'lost+found',
+        name: 'lost & found',
         slug: 'lost-and-found'
       },
       {
@@ -286,7 +286,7 @@ module.exports = [
         slug: 'appliances'
       },
       {
-        name: 'arts+crafts',
+        name: 'arts & crafts',
         slug: 'arts-and-crafts'
       },
       {
@@ -294,7 +294,7 @@ module.exports = [
         slug: 'auto-parts'
       },
       {
-        name: 'baby+kid',
+        name: 'baby & kid',
         slug: 'baby-and-kid'
       },
       {
@@ -376,7 +376,7 @@ module.exports = [
         slug: 'event'
       },
       {
-        name: 'farm+garden',
+        name: 'farm & garden',
         slug: 'farm-and-garden'
       },
       {
