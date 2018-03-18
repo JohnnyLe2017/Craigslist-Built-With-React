@@ -2,6 +2,7 @@ const express = require('express')
 const serveStatic = require('serve-static')
 const path = require('path')
 const categoriesData = require('./data/categories.js')
+const citiesData = require('./data/cities.js')
 
 // Express app is created here
 // Require the packages to run this application
