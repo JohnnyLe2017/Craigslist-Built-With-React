@@ -14,14 +14,14 @@ app.use('/', serveStatic(path.join(__dirname, '/public')))
 
 // api
 app.get('/api/cities', function (req, res) {
-  res.json(categoriesData)
+  res.json(citiesData)
 })
 
 app.get('/api/:city/:categories', function (req, res) {
   res.json(categoriesData)
 })
 
-app.get('/api/:city/:categories/:listing/items', function (req, res) {
+app.get('/api/:city/:categories/:listing/:item', function (req, res) {
   res.json(categoriesData)
 })
 
