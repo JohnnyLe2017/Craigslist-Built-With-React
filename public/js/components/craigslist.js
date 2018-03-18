@@ -646,7 +646,7 @@ var Home = function (_Component) {
             ),
             _react2.default.createElement(
               "div",
-              { className: "group-links" },
+              { className: "group-links " + (category.title == 'jobs' || category.title == 'personals' || category.title == 'housing' ? 'single-column' : '') },
               loopListings()
             )
           );

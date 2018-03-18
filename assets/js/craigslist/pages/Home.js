@@ -51,7 +51,9 @@ export default class Home extends Component {
         return (
           <div className="categories" key={i}>
             <div className="title">{category.title}</div>
-            <div className="group-links">
+            <div className={`group-links ${(category.title == 'jobs' ||
+              category.title == 'personals' || category.title == 'housing'
+            )? 'single-column' : ''}`}>
               {loopListings()}
               </div>
           </div>
