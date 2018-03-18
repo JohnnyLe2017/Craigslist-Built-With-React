@@ -14,7 +14,7 @@
   padding: 20px;
   margin-bottom: 70px;
   //max-width: 100%;
-  .categories{
+  .categories {
     .title {
       font-size: 1.3rem;
       margin-bottom: 1rem;
@@ -24,21 +24,23 @@
     .group-links {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+
       &.single-column {
         grid-template-columns: repeat(1, 1fr);
       }
-    .link {
-      color: #fff;
-      font-size: 0.7rem;
-      margin-bottom: 0.5rem;
-      text-decoration: none;
-      font-weight: 300;
-      &:hover {
-        color: red;
+      .link {
+        color: #fff;
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+        font-weight: 300;
+        &:hover {
+          color: red;
+        }
       }
     }
   }
-  }
+}
   .trending {
     max-width: 800px;
     margin: 0 auto;
