@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 123:
+/***/ 116:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16,29 +16,29 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(15);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouterDom = __webpack_require__(270);
+var _reactRouterDom = __webpack_require__(244);
 
-var _Header = __webpack_require__(144);
+var _Header = __webpack_require__(119);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Home = __webpack_require__(147);
+var _Home = __webpack_require__(122);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Listings = __webpack_require__(148);
+var _Listings = __webpack_require__(123);
 
 var _Listings2 = _interopRequireDefault(_Listings);
 
-var _Category = __webpack_require__(145);
+var _Category = __webpack_require__(120);
 
 var _Category2 = _interopRequireDefault(_Category);
 
-var _Details = __webpack_require__(146);
+var _Details = __webpack_require__(121);
 
 var _Details2 = _interopRequireDefault(_Details);
 
@@ -99,7 +99,7 @@ exports.default = App;
 
 /***/ }),
 
-/***/ 143:
+/***/ 118:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -109,11 +109,11 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(15);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = __webpack_require__(123);
+var _App = __webpack_require__(116);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -128,7 +128,7 @@ _reactDom2.default.render(_react2.default.createElement(_App2.default, null), ap
 
 /***/ }),
 
-/***/ 144:
+/***/ 119:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -144,7 +144,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(15);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -220,7 +220,7 @@ exports.default = Header;
 
 /***/ }),
 
-/***/ 145:
+/***/ 120:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -236,7 +236,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(15);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -288,7 +288,7 @@ exports.default = Category;
 
 /***/ }),
 
-/***/ 146:
+/***/ 121:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -304,11 +304,11 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(15);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _Gallery = __webpack_require__(149);
+var _Gallery = __webpack_require__(124);
 
 var _Gallery2 = _interopRequireDefault(_Gallery);
 
@@ -576,157 +576,14 @@ exports.default = Details;
 
 /***/ }),
 
-/***/ 147:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 122:
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(5);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(15);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _axios = __webpack_require__(125);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Home = function (_Component) {
-  _inherits(Home, _Component);
-
-  function Home() {
-    _classCallCheck(this, Home);
-
-    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this));
-
-    _this.clickedBtn = function () {
-      console.log("");
-    };
-
-    _this.loopCategories = function () {
-      if (_this.state.categoriesData != '') {
-        return _this.state.categoriesData.map(function (category, i) {
-          return _react2.default.createElement(
-            "div",
-            { className: "categories", key: i },
-            _react2.default.createElement(
-              "div",
-              { className: "title" },
-              category.title
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "group-links" },
-              _react2.default.createElement(
-                "a",
-                { href: "#", className: "link" },
-                "Communnity"
-              )
-            )
-          );
-        });
-      }
-    };
-
-    _this.loopTags = function () {
-      var testTags = ["a", "b", "c", "d", "e", "f", "g"];
-      return testTags.map(function (item, i) {
-        return _react2.default.createElement(
-          "div",
-          { key: i, className: "tag" },
-          "Apple Macbook"
-        );
-      });
-    };
-
-    _this.state = {
-      name: "Johnny",
-      categoriesData: ''
-    };
-    return _this;
-  }
-
-  _createClass(Home, [{
-    key: "componentWillMount",
-    value: function componentWillMount() {
-      var self = this;
-      _axios2.default.get('/api/categories').then(function (response) {
-        self.setState({
-          categoriesData: response.data
-        }, function () {
-          console.log(self.state);
-        });
-      }).catch(function (error) {
-        console.log(error);
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "div",
-        { className: "home" },
-        _react2.default.createElement(
-          "div",
-          { className: "container" },
-          _react2.default.createElement(
-            "h1",
-            null,
-            "Connecting People ",
-            _react2.default.createElement("br", null),
-            " Everywhere :)"
-          ),
-          _react2.default.createElement(
-            "section",
-            { className: "links" },
-            this.loopCategories()
-          ),
-          _react2.default.createElement(
-            "section",
-            { className: "trending" },
-            _react2.default.createElement("input", { type: "text", name: "search", className: "search" }),
-            _react2.default.createElement(
-              "div",
-              { className: "title" },
-              _react2.default.createElement("i", { className: "far fa-clock" }),
-              " TRENDING NOW"
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "trending-tags" },
-              this.loopTags()
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Home;
-}(_react.Component);
-
-exports.default = Home;
+throw new Error("Module build failed: SyntaxError: Unexpected token, expected ; (70:11)\n\n\u001b[0m \u001b[90m 68 | \u001b[39m    })\u001b[33m;\u001b[39m\n \u001b[90m 69 | \u001b[39m  }\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 70 | \u001b[39m  render() {\n \u001b[90m    | \u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 71 | \u001b[39m    \u001b[36mreturn\u001b[39m (\n \u001b[90m 72 | \u001b[39m      \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"home\"\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 73 | \u001b[39m        \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"container\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n");
 
 /***/ }),
 
-/***/ 148:
+/***/ 123:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -742,7 +599,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(15);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -969,7 +826,7 @@ exports.default = Listings;
 
 /***/ }),
 
-/***/ 149:
+/***/ 124:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -985,7 +842,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(15);
+var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -1102,4 +959,4 @@ exports.default = Gallery;
 
 /***/ })
 
-},[143]);
+},[118]);
