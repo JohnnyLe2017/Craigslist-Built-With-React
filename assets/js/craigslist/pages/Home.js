@@ -53,14 +53,14 @@ export default class Home extends Component {
 				return (
 					<div className="categories" key={i}>
 						<a href={`/${match.params.city}/${category.title}`} className="title">{category.title}</a>
-						<div className={`group-links ${(category.title == 'jobs' || category.title == 'personals' || category.title == 'housing') ? 'single-column' : ''}`}>
+						<div className={`group-links ${(category.title == 'jobs' || category.title == 'personals' || category.title == 'housing') ? 'single-col' : ''}`}>
 							{loopListings()}
 						</div>
 					</div>
 				)
 			})
 		} else {
-			return 'LOADING'
+			return 'Loading Section'
 		}
 	}
 	loopTags = () => {

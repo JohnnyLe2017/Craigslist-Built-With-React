@@ -651,13 +651,13 @@ var Home = function (_Component) {
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'group-links ' + (category.title == 'jobs' || category.title == 'personals' || category.title == 'housing' ? 'single-column' : '') },
+							{ className: 'group-links ' + (category.title == 'jobs' || category.title == 'personals' || category.title == 'housing' ? 'single-col' : '') },
 							loopListings()
 						)
 					);
 				});
 			} else {
-				return 'LOADING';
+				return 'Loading Section';
 			}
 		};
 
