@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 116:
+/***/ 124:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16,29 +16,29 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouterDom = __webpack_require__(244);
+var _reactRouterDom = __webpack_require__(111);
 
-var _Header = __webpack_require__(119);
+var _Header = __webpack_require__(145);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Home = __webpack_require__(122);
+var _Home = __webpack_require__(148);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Listings = __webpack_require__(123);
+var _Listings = __webpack_require__(149);
 
 var _Listings2 = _interopRequireDefault(_Listings);
 
-var _Category = __webpack_require__(120);
+var _Category = __webpack_require__(146);
 
 var _Category2 = _interopRequireDefault(_Category);
 
-var _Details = __webpack_require__(121);
+var _Details = __webpack_require__(147);
 
 var _Details2 = _interopRequireDefault(_Details);
 
@@ -99,7 +99,7 @@ exports.default = App;
 
 /***/ }),
 
-/***/ 118:
+/***/ 144:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -109,11 +109,11 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = __webpack_require__(116);
+var _App = __webpack_require__(124);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -128,7 +128,7 @@ _reactDom2.default.render(_react2.default.createElement(_App2.default, null), ap
 
 /***/ }),
 
-/***/ 119:
+/***/ 145:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -144,7 +144,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -220,7 +220,7 @@ exports.default = Header;
 
 /***/ }),
 
-/***/ 120:
+/***/ 146:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -236,7 +236,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -288,7 +288,7 @@ exports.default = Category;
 
 /***/ }),
 
-/***/ 121:
+/***/ 147:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -304,11 +304,11 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _Gallery = __webpack_require__(124);
+var _Gallery = __webpack_require__(150);
 
 var _Gallery2 = _interopRequireDefault(_Gallery);
 
@@ -576,14 +576,7 @@ exports.default = Details;
 
 /***/ }),
 
-/***/ 122:
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: SyntaxError: Unexpected token, expected ; (70:11)\n\n\u001b[0m \u001b[90m 68 | \u001b[39m    })\u001b[33m;\u001b[39m\n \u001b[90m 69 | \u001b[39m  }\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 70 | \u001b[39m  render() {\n \u001b[90m    | \u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 71 | \u001b[39m    \u001b[36mreturn\u001b[39m (\n \u001b[90m 72 | \u001b[39m      \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"home\"\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 73 | \u001b[39m        \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"container\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n");
-
-/***/ }),
-
-/***/ 123:
+/***/ 148:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -599,7 +592,184 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(15);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _reactRouterDom = __webpack_require__(111);
+
+var _axios = __webpack_require__(126);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Home = function (_Component) {
+  _inherits(Home, _Component);
+
+  function Home() {
+    _classCallCheck(this, Home);
+
+    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this));
+
+    _this.clickedBtn = function () {
+      console.log("");
+    };
+
+    _this.loopCategories = function () {
+      var _this$props = _this.props,
+          match = _this$props.match,
+          history = _this$props.history;
+      //if statement for data
+
+      if (_this.state.categoriesData != '') {
+        //  return back the loop of categories
+        return _this.state.categoriesData.map(function (category, i) {
+          // created a loop for the listings
+          var loopListings = function loopListings() {
+            return category.listings.map(function (listing, index) {
+              return _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: "/" + match.params.city + "/" + category.title + "/" + listing.slug, key: index },
+                listing.name
+              );
+            });
+          };
+          return _react2.default.createElement(
+            "div",
+            { className: "categories", key: i },
+            _react2.default.createElement(
+              "a",
+              { href: "/" + match.params.city + "/" + category.title, className: "title" },
+              category.title
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "group-links " + (category.title == 'jobs' || category.title == 'personals' || category.title == 'housing' ? 'single-column' : '') },
+              loopListings()
+            )
+          );
+        });
+      } else {
+        return 'LOADING';
+      }
+    };
+
+    _this.loopTags = function () {
+      var testTags = ["a", "b", "c", "d", "e", "f", "g"];
+      return testTags.map(function (item, i) {
+        return _react2.default.createElement(
+          "div",
+          { key: i, className: "tag" },
+          "Apple Macbook"
+        );
+      });
+    };
+
+    _this.state = {
+      name: "Johnny",
+      categoriesData: ''
+    };
+    return _this;
+  }
+
+  _createClass(Home, [{
+    key: "componentWillMount",
+    value: function componentWillMount() {}
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _props = this.props,
+          match = _props.match,
+          history = _props.history;
+
+      if (match.params.city == undefined) {
+        history.push('/nyc');
+      }
+
+      var self = this;
+      _axios2.default.get("/api/" + match.params.city).then(function (response) {
+        self.setState({
+          categoriesData: response.data
+        }, function () {
+          console.log(self.state);
+        });
+      }).catch(function (error) {
+        console.log(error);
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "home" },
+        _react2.default.createElement(
+          "div",
+          { className: "container" },
+          _react2.default.createElement(
+            "h1",
+            null,
+            "Connecting People ",
+            _react2.default.createElement("br", null),
+            " Everywhere :)"
+          ),
+          _react2.default.createElement(
+            "section",
+            { className: "links" },
+            this.loopCategories()
+          ),
+          _react2.default.createElement(
+            "section",
+            { className: "trending" },
+            _react2.default.createElement("input", { type: "text", name: "search", className: "search" }),
+            _react2.default.createElement(
+              "div",
+              { className: "title" },
+              _react2.default.createElement("i", { className: "far fa-clock" }),
+              " TRENDING NOW"
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "trending-tags" },
+              this.loopTags()
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Home;
+}(_react.Component);
+
+exports.default = Home;
+
+/***/ }),
+
+/***/ 149:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -826,7 +996,7 @@ exports.default = Listings;
 
 /***/ }),
 
-/***/ 124:
+/***/ 150:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -842,7 +1012,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -959,4 +1129,4 @@ exports.default = Gallery;
 
 /***/ })
 
-},[118]);
+},[144]);
