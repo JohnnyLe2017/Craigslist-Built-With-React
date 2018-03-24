@@ -10,51 +10,60 @@ export default class Home extends Component {
       categoriesData: ''
     }
   }
+  componentWillMount(){
 
-componentDidMount() {
-    const {match, history} = this.props
-    if(match.params.city == undefined) {
-      history.push('nyc')
-    }
-    const self = this;
-    axios.get(`/api/${match.params.city}/categories`)
-    .then(function (response) {
-      self.setState({
-        categoriesData: response.data
-      }, () => {
-        console.log(self.state);
-      })
-  })
-    .catch(function (error) {
-      console.log(error);
-    });
-  }
-  }
+	}
+	componentDidMount(){
+		const {match, history } = this.props
+		if(match.params.city == undefined){
+			history.push('/nyc')
+		}
 
+		const self = this;
+		axios.get(`/api/${match.params.city}`)
+	  .then(function (response) {
+			self.setState({
+				categoriesData: response.data
+			}, () => {
+				console.log(self.state);
+			})
+	  })
+	  .catch(function (error) {
+	    console.log(error);
+	  });
+	}
 
 clickedBtn = () => {
     console.log("");
   }
 
   loopCategories = () => {
+    const {match, history } = this.props
+    //if statement for data
     if(this.state.categoriesData != '') {
-      return this.state.categoriesData.map((category, i) =>
-      {
+      //  return back the loop of categories
+      return this.state.categoriesData.map((category, i) => {
+        // created a loop for the listings
+        const loopListings = () => {
+          return category.listings.map((listing, index) => {
+            return (
+              <Link to={`/${match.params.city}/${category.title}/${listing.slug}`} key={index}>{listing.name}</Link>
+            )
+          })
+        }
         return (
           <div className="categories" key={i}>
-            <div className="title">{category.title}</div>
-            <div className="group-links">
-              <a href="#" className="link">
-                Communnity
-              </a>
+            <a href={`/${match.params.city}/${category.title}`} className="title">{category.title}</a>
+            <div className={`group-links ${(category.title == 'jobs' || category.title == 'personals' || category.title == 'housing') ? 'single-column' : ''}`}>
+              {loopListings()}
             </div>
-            </div>
-          )
-        })
-      }
+          </div>
+        )
+      })
+    } else {
+      return 'LOADING'
     }
-
-
+  }
 
 
   loopTags = () => {
