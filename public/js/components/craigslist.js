@@ -667,7 +667,7 @@ var Home = function (_Component) {
 				return _react2.default.createElement(
 					'div',
 					{ key: i, className: 'tag' },
-					'Apple Macbook',
+					'Apple Macbook Pro',
 					' '
 				);
 			});
@@ -734,7 +734,7 @@ var Home = function (_Component) {
 							'div',
 							{ className: 'title' },
 							_react2.default.createElement('i', { className: 'far fa-clock' }),
-							' Trending Now'
+							' Trending Now!!'
 						),
 						_react2.default.createElement(
 							'div',

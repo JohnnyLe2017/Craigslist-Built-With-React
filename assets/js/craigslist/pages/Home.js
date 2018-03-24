@@ -67,7 +67,7 @@ export default class Home extends Component {
 		let testTags = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 		return testTags.map((item, i) => (
 			<div key={i} className="tag">
-				Apple Macbook{' '}
+				Apple Macbook Pro{' '}
 			</div>
 		))
 	}
@@ -82,7 +82,7 @@ export default class Home extends Component {
 					<section className={'trending'}>
 						<input type="text" name="search" className="search" />
 						<div className="title">
-							<i className="far fa-clock" /> Trending Now
+							<i className="far fa-clock" /> Trending Now!!
 						</div>
 						<div className="trending-tags">{this.loopTags()}</div>
 					</section>
