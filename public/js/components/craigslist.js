@@ -583,7 +583,7 @@ exports.default = Details;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+	value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -611,142 +611,143 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Home = function (_Component) {
-  _inherits(Home, _Component);
+	_inherits(Home, _Component);
 
-  function Home() {
-    _classCallCheck(this, Home);
+	function Home() {
+		_classCallCheck(this, Home);
 
-    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this));
+		var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this));
 
-    _this.clickedBtn = function () {
-      console.log("");
-    };
+		_this.clickedBtn = function () {
+			console.log('');
+		};
 
-    _this.loopCategories = function () {
-      var _this$props = _this.props,
-          match = _this$props.match,
-          history = _this$props.history;
-      //if statement for data
+		_this.loopCategories = function () {
+			var _this$props = _this.props,
+			    match = _this$props.match,
+			    history = _this$props.history;
+			//if statement for data
 
-      if (_this.state.categoriesData != '') {
-        //  return back the loop of categories
-        return _this.state.categoriesData.map(function (category, i) {
-          // created a loop for the listings
-          var loopListings = function loopListings() {
-            return category.listings.map(function (listing, index) {
-              return _react2.default.createElement(
-                _reactRouterDom.Link,
-                { to: "/" + match.params.city + "/" + category.title + "/" + listing.slug, key: index },
-                listing.name
-              );
-            });
-          };
-          return _react2.default.createElement(
-            "div",
-            { className: "categories", key: i },
-            _react2.default.createElement(
-              "a",
-              { href: "/" + match.params.city + "/" + category.title, className: "title" },
-              category.title
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "group-links " + (category.title == 'jobs' || category.title == 'personals' || category.title == 'housing' ? 'single-column' : '') },
-              loopListings()
-            )
-          );
-        });
-      } else {
-        return 'LOADING';
-      }
-    };
+			if (_this.state.categoriesData != '') {
+				//  return back the loop of categories
+				return _this.state.categoriesData.map(function (category, i) {
+					// created a loop for the listings
+					var loopListings = function loopListings() {
+						return category.listings.map(function (listing, index) {
+							return _react2.default.createElement(
+								_reactRouterDom.Link,
+								{ to: '/' + match.params.city + '/' + category.title + '/' + listing.slug, key: index },
+								listing.name
+							);
+						});
+					};
+					return _react2.default.createElement(
+						'div',
+						{ className: 'categories', key: i },
+						_react2.default.createElement(
+							'a',
+							{ href: '/' + match.params.city + '/' + category.title, className: 'title' },
+							category.title
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'group-links ' + (category.title == 'jobs' || category.title == 'personals' || category.title == 'housing' ? 'single-column' : '') },
+							loopListings()
+						)
+					);
+				});
+			} else {
+				return 'LOADING';
+			}
+		};
 
-    _this.loopTags = function () {
-      var testTags = ["a", "b", "c", "d", "e", "f", "g"];
-      return testTags.map(function (item, i) {
-        return _react2.default.createElement(
-          "div",
-          { key: i, className: "tag" },
-          "Apple Macbook"
-        );
-      });
-    };
+		_this.loopTags = function () {
+			var testTags = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+			return testTags.map(function (item, i) {
+				return _react2.default.createElement(
+					'div',
+					{ key: i, className: 'tag' },
+					'Apple Macbook',
+					' '
+				);
+			});
+		};
 
-    _this.state = {
-      name: "Johnny",
-      categoriesData: ''
-    };
-    return _this;
-  }
+		_this.state = {
+			name: 'Johnny',
+			categoriesData: ''
+		};
+		return _this;
+	}
 
-  _createClass(Home, [{
-    key: "componentWillMount",
-    value: function componentWillMount() {}
-  }, {
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _props = this.props,
-          match = _props.match,
-          history = _props.history;
+	_createClass(Home, [{
+		key: 'componentWillMount',
+		value: function componentWillMount() {}
+	}, {
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			var _props = this.props,
+			    match = _props.match,
+			    history = _props.history;
 
-      if (match.params.city == undefined) {
-        history.push('/nyc');
-      }
+			if (match.params.city == undefined) {
+				history.push('/nyc');
+			}
 
-      var self = this;
-      _axios2.default.get("/api/" + match.params.city).then(function (response) {
-        self.setState({
-          categoriesData: response.data
-        }, function () {
-          console.log(self.state);
-        });
-      }).catch(function (error) {
-        console.log(error);
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "div",
-        { className: "home" },
-        _react2.default.createElement(
-          "div",
-          { className: "container" },
-          _react2.default.createElement(
-            "h1",
-            null,
-            "Connecting People ",
-            _react2.default.createElement("br", null),
-            " Everywhere :)"
-          ),
-          _react2.default.createElement(
-            "section",
-            { className: "links" },
-            this.loopCategories()
-          ),
-          _react2.default.createElement(
-            "section",
-            { className: "trending" },
-            _react2.default.createElement("input", { type: "text", name: "search", className: "search" }),
-            _react2.default.createElement(
-              "div",
-              { className: "title" },
-              _react2.default.createElement("i", { className: "far fa-clock" }),
-              " TRENDING NOW"
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "trending-tags" },
-              this.loopTags()
-            )
-          )
-        )
-      );
-    }
-  }]);
+			var self = this;
+			_axios2.default.get('/api/' + match.params.city).then(function (response) {
+				self.setState({
+					categoriesData: response.data
+				}, function () {
+					console.log(self.state);
+				});
+			}).catch(function (error) {
+				console.log(error);
+			});
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ className: 'home' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'container' },
+					_react2.default.createElement(
+						'h1',
+						null,
+						'Connecting People ',
+						_react2.default.createElement('br', null),
+						' Everywhere :)'
+					),
+					_react2.default.createElement(
+						'section',
+						{ className: 'links' },
+						this.loopCategories()
+					),
+					_react2.default.createElement(
+						'section',
+						{ className: 'trending' },
+						_react2.default.createElement('input', { type: 'text', name: 'search', className: 'search' }),
+						_react2.default.createElement(
+							'div',
+							{ className: 'title' },
+							_react2.default.createElement('i', { className: 'far fa-clock' }),
+							' Trending Now'
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'trending-tags' },
+							this.loopTags()
+						)
+					)
+				)
+			);
+		}
+	}]);
 
-  return Home;
+	return Home;
 }(_react.Component);
 
 exports.default = Home;
