@@ -40,6 +40,14 @@ header{
   justify-content: center;
   align-items: center;
   padding: 15px 20px;
+  position: relative;
+  .dropdown{
+    position: absolute;
+    background: blue;
+    top: 50px;
+    width: 100%;
+    padding: 15px;
+  }
 }
 
 .right-menu{

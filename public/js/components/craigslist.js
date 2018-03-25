@@ -194,6 +194,19 @@ var Header = function (_Component) {
         ),
         _react2.default.createElement(
           "div",
+          { className: "dropdown" },
+          _react2.default.createElement(
+            "ul",
+            null,
+            _react2.default.createElement(
+              "li",
+              null,
+              "New York City"
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
           { className: "right-menu" },
           _react2.default.createElement(
             "div",

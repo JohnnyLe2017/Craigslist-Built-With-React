@@ -20,7 +20,11 @@ export default class Header extends Component {
           Atlanta
           <i className={`fas fa-chevron-down`} />
         </div>
-
+        <div className={`dropdown`}>
+          <ul>
+            <li>New York City</li>
+          </ul>
+        </div>
         <div className={"right-menu"}>
           <div className={"user-img"}>img</div>
           <div className={"user-dropdown"} />
