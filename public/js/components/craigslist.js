@@ -169,7 +169,9 @@ var Header = function (_Component) {
     };
 
     _this.state = {
-      name: "Johnny"
+      name: "Johnny",
+      cityDropDown: false,
+      selectedCity: "nyc"
     };
     return _this;
   }
@@ -195,7 +197,25 @@ var Header = function (_Component) {
               "div",
               { className: "city" },
               "Atlanta",
-              _react2.default.createElement("i", { className: "fas fa-chevron-down" })
+              _react2.default.createElement("i", { className: "fas fa-chevron-down" }),
+              _react2.default.createElement(
+                "div",
+                { className: "dropdown" },
+                _react2.default.createElement(
+                  "ul",
+                  null,
+                  _react2.default.createElement(
+                    "li",
+                    null,
+                    "New York City"
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    null,
+                    "New York City"
+                  )
+                )
+              )
             )
           ),
           _react2.default.createElement(

@@ -5,7 +5,9 @@ export default class Header extends Component {
   constructor() {
     super();
     this.state = {
-      name: "Johnny"
+      name: "Johnny",
+      cityDropDown: false,
+      selectedCity: "nyc"
     };
   }
   clickedBtn = () => {
@@ -21,6 +23,12 @@ export default class Header extends Component {
           <div className={"city"}>
           Atlanta
           <i className={`fas fa-chevron-down`} />
+          <div className={"dropdown"}>
+            <ul>
+              <li>New York City</li>
+              <li>New York City</li>
+            </ul>
+          </div>
           </div>
         </div>
 
