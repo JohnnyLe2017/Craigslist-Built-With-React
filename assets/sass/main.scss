@@ -24,37 +24,53 @@ header{
   flex-flow: row nowrap;
   justify-content: space-between;
   color: white;
-}
 
-.left-menu{
-  display: flex;
+  .fas{
+    margin-left: 10px;
   }
 
-.logo{
-  font-size: 2rem;
-  display: flex;
+  .left-menu{
+    display: flex;
+    }
+
+    .logo{
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  .city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+
+    .dropdown{
+      position: absolute;
+      background: blue;
+      top: 50px;
+      width: 100%;
+      padding: 15px;
+    }
+  }
+
+  .right-menu{
+    display: flex;
+    align-items: right;
+    margin-left: 70rem;
+    }
+
 }
 
-.city{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 20px;
-  position: relative;
-  .dropdown{
-    position: absolute;
-    background: blue;
-    top: 50px;
-    width: 100%;
-    padding: 15px;
-  }
-}
 
-.right-menu{
-  display: flex;
-  align-items: right;
-  margin-left: 70rem;
-  }
+
+
+
+
+
+
 
 .user-img{
   display: flex;
@@ -77,9 +93,7 @@ header{
   color: white;
 }
 
-.fas{
-  margin-left: 10px;
-}
+
 
 .container {
   max-width: 1300px;
