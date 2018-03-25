@@ -3,6 +3,7 @@ const serveStatic = require('serve-static')
 const path = require('path')
 const categoriesData = require('./data/categories.js')
 const citiesData = require('./data/cities.js')
+const itemsData = require('./data/items.js')
 
 // Express app is created here
 // Require the packages to run this application
@@ -22,7 +23,7 @@ app.get('/api/:city/:categories', function (req, res) {
 })
 
 app.get('/api/:city/:categories/:listing/:item', function (req, res) {
-  res.json(categoriesData)
+  res.json(itemsData)
 })
 
 app.get('*', function (req, res) {
