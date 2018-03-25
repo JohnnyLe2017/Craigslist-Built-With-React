@@ -178,49 +178,46 @@ var Header = function (_Component) {
     key: "render",
     value: function render() {
       return _react2.default.createElement(
-        "header",
-        null,
+        "div",
+        { className: "container" },
         _react2.default.createElement(
-          "div",
-          { className: "left-menu" },
+          "header",
+          null,
           _react2.default.createElement(
             "div",
-            { className: "logo" },
-            "Craigslist"
-          ),
-          _react2.default.createElement("div", { className: "city" }),
-          "Atlanta",
-          _react2.default.createElement("i", { className: "fas fa-chevron-down" })
-        ),
-        _react2.default.createElement(
-          "div",
-          { className: "dropdown" },
-          _react2.default.createElement(
-            "ul",
-            null,
+            { className: "left-menu" },
             _react2.default.createElement(
-              "li",
-              null,
-              "New York City"
+              "div",
+              { className: "logo" },
+              "Craigslist"
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "city" },
+              "Atlanta",
+              _react2.default.createElement("i", { className: "fas fa-chevron-down" })
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "right-menu" },
+            _react2.default.createElement(
+              "div",
+              { className: "user-img" },
+              "img"
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "user-dropdown" },
+              "My Account",
+              _react2.default.createElement("i", { className: "fas fa-chevron-down" })
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "post-btn" },
+              "Post to Classifieds"
             )
           )
-        ),
-        _react2.default.createElement(
-          "div",
-          { className: "right-menu" },
-          _react2.default.createElement(
-            "div",
-            { className: "user-img" },
-            "img"
-          ),
-          _react2.default.createElement("div", { className: "user-dropdown" }),
-          "My Account",
-          _react2.default.createElement("i", { className: "fas fa-chevron-down" })
-        ),
-        _react2.default.createElement(
-          "div",
-          { className: "post-btn" },
-          "Post to Classifieds"
         )
       );
     }

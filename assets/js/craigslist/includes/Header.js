@@ -13,26 +13,28 @@ export default class Header extends Component {
   };
   render() {
     return (
+      <div className="container">
       <header>
+
         <div className={"left-menu"}>
           <div className={"logo"}>Craigslist</div>
-          <div className={"city"} />
+          <div className={"city"}>
           Atlanta
           <i className={`fas fa-chevron-down`} />
+          </div>
         </div>
-        <div className={`dropdown`}>
-          <ul>
-            <li>New York City</li>
-          </ul>
-        </div>
+
         <div className={"right-menu"}>
           <div className={"user-img"}>img</div>
-          <div className={"user-dropdown"} />
+          <div className={"user-dropdown"}>
           My Account
           <i className={`fas fa-chevron-down`} />
         </div>
         <div className={"post-btn"}>Post to Classifieds</div>
+        </div>
+
       </header>
+    </div>
     );
   }
 }
