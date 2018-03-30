@@ -172,6 +172,16 @@ var Header = function (_Component) {
       console.log("");
     };
 
+    _this.loopCities = function () {
+      return _this.state.citiesData.map(function (item, i) {
+        return _react2.default.createElement(
+          "li",
+          null,
+          item.title
+        );
+      });
+    };
+
     _this.state = {
       name: "Johnny",
       cityDropDown: false,
@@ -223,16 +233,7 @@ var Header = function (_Component) {
                 _react2.default.createElement(
                   "ul",
                   null,
-                  _react2.default.createElement(
-                    "li",
-                    null,
-                    "New York City"
-                  ),
-                  _react2.default.createElement(
-                    "li",
-                    null,
-                    "New York City"
-                  )
+                  this.loopCities()
                 )
               )
             )

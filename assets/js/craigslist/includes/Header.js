@@ -29,6 +29,14 @@ export default class Header extends Component {
   clickedBtn = () => {
     console.log("");
   };
+  loopCities = () => {
+    return this.state.citiesData.map((item, i) => {
+      return (
+        <li>{item.title}</li>
+      )
+    })
+  }
+
   render() {
     return (
       <div className="container">
@@ -41,8 +49,7 @@ export default class Header extends Component {
           <i className={`fas fa-chevron-down`} />
           <div className={"dropdown"}>
             <ul>
-              <li>New York City</li>
-              <li>New York City</li>
+              {this.loopCities()}
             </ul>
           </div>
           </div>
