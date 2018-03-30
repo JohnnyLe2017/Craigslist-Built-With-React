@@ -175,12 +175,27 @@ var Header = function (_Component) {
     _this.state = {
       name: "Johnny",
       cityDropDown: false,
-      selectedCity: "nyc"
+      selectedCity: "nyc",
+      citiesData: []
     };
     return _this;
   }
 
   _createClass(Header, [{
+    key: "componentWillMount",
+    value: function componentWillMount() {
+      var self = this;
+      _axios2.default.get("/api/cities").then(function (response) {
+        self.setState({
+          categoriesData: response.data
+        }, function () {
+          console.log(self.state);
+        });
+      }).catch(function (error) {
+        console.log(error);
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       return _react2.default.createElement(

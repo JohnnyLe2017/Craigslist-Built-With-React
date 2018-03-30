@@ -8,8 +8,23 @@ export default class Header extends Component {
     this.state = {
       name: "Johnny",
       cityDropDown: false,
-      selectedCity: "nyc"
+      selectedCity: "nyc",
+      citiesData: []
     };
+  }
+  componentWillMount(){
+    const self = this;
+    axios.get(`/api/cities`)
+    .then(function (response) {
+      self.setState({
+        categoriesData: response.data
+      }, () => {
+        console.log(self.state);
+      })
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
   }
   clickedBtn = () => {
     console.log("");
