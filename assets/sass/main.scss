@@ -55,9 +55,10 @@ header{
         overflow-x: hidden;
         visibility: hidden;
         
-        &.active{
+       &.active{
           visibility: visible;
         }
+
         ul{
           li{
             padding: 15px;
@@ -66,6 +67,7 @@ header{
       }
     }
     }
+
   .right-menu {
     display: flex;
     align-items: right;
