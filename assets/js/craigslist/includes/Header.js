@@ -28,7 +28,7 @@ export default class Header extends Component {
   }
   clickedCityDropdown = () => {
     this.setState({
-      cityDropDown: !this.state.cityDropDown
+      cityDropDown: !this.state.cityDropdown
     })
   };
   loopCities = () => {
@@ -51,7 +51,7 @@ export default class Header extends Component {
           Atlanta
           <i className={`fas fa-chevron-down`} />
           <div className={`scroll-area
-              ${(this.state.cityDropDown) ? 'active':
+              ${(this.state.cityDropdown) ? 'active':
               ''}`}>
             <ul>
               {this.loopCities()}

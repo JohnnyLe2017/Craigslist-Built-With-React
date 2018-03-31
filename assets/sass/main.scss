@@ -29,19 +29,16 @@ header{
     margin-left: 10px;
   }
 
-  .container {
-    max-width: 1300px;
-    margin: 0 auto;
-  }
-
   .left-menu {
     display: flex;
+
     .logo {
       font-size: 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
     .city-dropdown {
       display: flex;
       justify-content: center;
@@ -57,6 +54,7 @@ header{
         overflow-y: scroll;
         overflow-x: hidden;
         visibility: hidden;
+        
         &.active{
           visibility: visible;
         }
@@ -95,4 +93,9 @@ header{
       color: white;
     }
 
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
 }

@@ -170,7 +170,7 @@ var Header = function (_Component) {
 
     _this.clickedCityDropdown = function () {
       _this.setState({
-        cityDropDown: !_this.state.cityDropDown
+        cityDropDown: !_this.state.cityDropdown
       });
     };
 
@@ -232,7 +232,7 @@ var Header = function (_Component) {
               _react2.default.createElement("i", { className: "fas fa-chevron-down" }),
               _react2.default.createElement(
                 "div",
-                { className: "scroll-area\n              " + (this.state.cityDropDown ? 'active' : '') },
+                { className: "scroll-area\n              " + (this.state.cityDropdown ? 'active' : '') },
                 _react2.default.createElement(
                   "ul",
                   null,
