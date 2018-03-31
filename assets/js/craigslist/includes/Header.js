@@ -26,13 +26,15 @@ export default class Header extends Component {
       console.log(error);
     });
   }
-  clickedBtn = () => {
-    console.log("");
+  clickedCityDropdown = () => {
+    this.setState({
+      cityDropDown: !this.state.cityDropDown
+    })
   };
   loopCities = () => {
     return this.state.citiesData.map((item, i) => {
       return (
-        <li>{item.title}</li>
+        <li key={i}>{item.title}</li>
       )
     })
   }
@@ -44,10 +46,13 @@ export default class Header extends Component {
 
         <div className={"left-menu"}>
           <div className={"logo"}>Craigslist</div>
-          <div className={"city"}>
+          <div className={"city-dropdown"}
+            onClick={this.clickedCityDropdown}>
           Atlanta
           <i className={`fas fa-chevron-down`} />
-          <div className={"dropdown"}>
+          <div className={`scroll-area
+              ${(this.state.cityDropDown) ? 'active':
+              ''}`}>
             <ul>
               {this.loopCities()}
             </ul>

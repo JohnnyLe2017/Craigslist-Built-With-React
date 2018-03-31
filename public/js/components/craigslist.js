@@ -168,15 +168,17 @@ var Header = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this));
 
-    _this.clickedBtn = function () {
-      console.log("");
+    _this.clickedCityDropdown = function () {
+      _this.setState({
+        cityDropDown: !_this.state.cityDropDown
+      });
     };
 
     _this.loopCities = function () {
       return _this.state.citiesData.map(function (item, i) {
         return _react2.default.createElement(
           "li",
-          null,
+          { key: i },
           item.title
         );
       });
@@ -224,12 +226,13 @@ var Header = function (_Component) {
             ),
             _react2.default.createElement(
               "div",
-              { className: "city" },
+              { className: "city-dropdown",
+                onClick: this.clickedCityDropdown },
               "Atlanta",
               _react2.default.createElement("i", { className: "fas fa-chevron-down" }),
               _react2.default.createElement(
                 "div",
-                { className: "dropdown" },
+                { className: "scroll-area\n              " + (this.state.cityDropDown ? 'active' : '') },
                 _react2.default.createElement(
                   "ul",
                   null,

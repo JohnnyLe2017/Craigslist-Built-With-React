@@ -34,31 +34,35 @@ header{
     margin: 0 auto;
   }
 
-  .left-menu{
+  .left-menu {
     display: flex;
     }
 
-    .logo{
+    .logo {
       font-size: 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-  .city{
+  .city-dropdown {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px 20px;
     position: relative;
 
-    .dropdown{
+    .scroll-area {
       position: absolute;
       background: blue;
       top: 50px;
       width: 100%;
       overflow-y: scroll;
       overflow-x: hidden;
+      visibility: hidden;
+      &.active{
+        visibility: visible;
+      }
       ul{
         li{
           padding: 15px;
