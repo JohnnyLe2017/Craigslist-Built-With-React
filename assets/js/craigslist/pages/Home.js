@@ -46,7 +46,9 @@ export default class Home extends Component {
 				const loopListings = () => {
 					return category.listings.map((listing, index) => {
 						return (
-							<Link to={`/${match.params.city}/${category.title}/${listing.slug}`} key={index}>{listing.name}</Link>
+							<a href={`${category.title}/${listing.slug}`}
+							className="link" key={index}>
+							{listing.name}</a>
 						)
 					})
 				}

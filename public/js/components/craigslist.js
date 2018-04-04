@@ -688,8 +688,9 @@ var Home = function (_Component) {
 					var loopListings = function loopListings() {
 						return category.listings.map(function (listing, index) {
 							return _react2.default.createElement(
-								_reactRouterDom.Link,
-								{ to: '/' + match.params.city + '/' + category.title + '/' + listing.slug, key: index },
+								'a',
+								{ href: category.title + '/' + listing.slug,
+									className: 'link', key: index },
 								listing.name
 							);
 						});
