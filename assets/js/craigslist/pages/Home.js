@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 export default class Home extends Component {
@@ -54,7 +54,7 @@ export default class Home extends Component {
 				}
 				return (
 					<div className="categories" key={i}>
-						<a href={`/${match.params.city}/${category.title}`} className="title">{category.title}</a>
+						<div className="title">{category.title}</div>
 						<div className={`group-links ${(category.title == 'jobs' || category.title == 'personals' || category.title == 'housing') ? 'single-col' : ''}`}>
 							{loopListings()}
 						</div>

@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 125:
+/***/ 124:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20,25 +20,25 @@ var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouterDom = __webpack_require__(112);
+var _reactRouterDom = __webpack_require__(270);
 
-var _Header = __webpack_require__(145);
+var _Header = __webpack_require__(144);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Home = __webpack_require__(148);
+var _Home = __webpack_require__(147);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Listings = __webpack_require__(149);
+var _Listings = __webpack_require__(148);
 
 var _Listings2 = _interopRequireDefault(_Listings);
 
-var _Category = __webpack_require__(146);
+var _Category = __webpack_require__(145);
 
 var _Category2 = _interopRequireDefault(_Category);
 
-var _Details = __webpack_require__(147);
+var _Details = __webpack_require__(146);
 
 var _Details2 = _interopRequireDefault(_Details);
 
@@ -99,7 +99,7 @@ exports.default = App;
 
 /***/ }),
 
-/***/ 144:
+/***/ 143:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -113,7 +113,7 @@ var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = __webpack_require__(125);
+var _App = __webpack_require__(124);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -128,7 +128,7 @@ _reactDom2.default.render(_react2.default.createElement(_App2.default, null), ap
 
 /***/ }),
 
-/***/ 145:
+/***/ 144:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -170,7 +170,7 @@ var Header = function (_Component) {
 
     _this.clickedCityDropdown = function () {
       _this.setState({
-        cityDropDown: !_this.state.cityDropdown
+        cityDropdown: !_this.state.cityDropdown
       });
     };
 
@@ -186,7 +186,7 @@ var Header = function (_Component) {
 
     _this.state = {
       name: "Johnny",
-      cityDropDown: false,
+      cityDropdown: false,
       selectedCity: "nyc",
       citiesData: []
     };
@@ -273,7 +273,7 @@ exports.default = Header;
 
 /***/ }),
 
-/***/ 146:
+/***/ 145:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -341,7 +341,7 @@ exports.default = Category;
 
 /***/ }),
 
-/***/ 147:
+/***/ 146:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -361,7 +361,7 @@ var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _Gallery = __webpack_require__(150);
+var _Gallery = __webpack_require__(149);
 
 var _Gallery2 = _interopRequireDefault(_Gallery);
 
@@ -629,7 +629,7 @@ exports.default = Details;
 
 /***/ }),
 
-/***/ 148:
+/***/ 147:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -649,8 +649,6 @@ var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouterDom = __webpack_require__(112);
-
 var _axios = __webpack_require__(69);
 
 var _axios2 = _interopRequireDefault(_axios);
@@ -662,6 +660,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+//import { Link } from 'react-router-dom'
+
 
 var Home = function (_Component) {
 	_inherits(Home, _Component);
@@ -699,8 +699,8 @@ var Home = function (_Component) {
 						'div',
 						{ className: 'categories', key: i },
 						_react2.default.createElement(
-							'a',
-							{ href: '/' + match.params.city + '/' + category.title, className: 'title' },
+							'div',
+							{ className: 'title' },
 							category.title
 						),
 						_react2.default.createElement(
@@ -808,7 +808,7 @@ exports.default = Home;
 
 /***/ }),
 
-/***/ 149:
+/***/ 148:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1051,7 +1051,7 @@ exports.default = Listings;
 
 /***/ }),
 
-/***/ 150:
+/***/ 149:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1184,4 +1184,4 @@ exports.default = Gallery;
 
 /***/ })
 
-},[144]);
+},[143]);

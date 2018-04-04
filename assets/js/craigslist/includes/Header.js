@@ -7,7 +7,7 @@ export default class Header extends Component {
     super();
     this.state = {
       name: "Johnny",
-      cityDropDown: false,
+      cityDropdown: false,
       selectedCity: "nyc",
       citiesData: []
     };
@@ -28,7 +28,7 @@ export default class Header extends Component {
   }
   clickedCityDropdown = () => {
     this.setState({
-      cityDropDown: !this.state.cityDropdown
+      cityDropdown: !this.state.cityDropdown
     })
   };
   loopCities = () => {
