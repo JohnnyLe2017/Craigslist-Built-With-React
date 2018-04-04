@@ -218,15 +218,15 @@ var Header = function (_Component) {
           null,
           _react2.default.createElement(
             "div",
-            { className: "left-menu" },
+            { className: 'left-menu' },
             _react2.default.createElement(
               "div",
-              { className: "logo" },
+              { className: 'logo' },
               "Craigslist"
             ),
             _react2.default.createElement(
               "div",
-              { className: "city-dropdown",
+              { className: 'city-dropdown',
                 onClick: this.clickedCityDropdown },
               "Atlanta",
               _react2.default.createElement("i", { className: "fas fa-chevron-down" }),

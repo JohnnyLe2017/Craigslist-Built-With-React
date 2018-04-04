@@ -41,12 +41,12 @@ export default class Header extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className='container'>
       <header>
 
-        <div className={"left-menu"}>
-          <div className={"logo"}>Craigslist</div>
-          <div className={"city-dropdown"}
+        <div className={'left-menu'}>
+          <div className={'logo'}>Craigslist</div>
+          <div className={'city-dropdown'}
             onClick={this.clickedCityDropdown}>
           Atlanta
           <i className={`fas fa-chevron-down`} />
