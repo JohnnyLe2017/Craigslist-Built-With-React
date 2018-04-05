@@ -309,26 +309,216 @@ var Category = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, (Category.__proto__ || Object.getPrototypeOf(Category)).call(this));
 
+    _this.loopItems = function () {
+      var testArray = [1, 2, 3, 4, 5, 6, 7, 8];
+      return testArray.map(function (item, i) {
+        return _react2.default.createElement(
+          "div",
+          { className: "item" },
+          _react2.default.createElement(
+            "div",
+            { className: "image" },
+            _react2.default.createElement(
+              "div",
+              { className: "price" },
+              "$9,000"
+            ),
+            "Image"
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "details" },
+            _react2.default.createElement("i", { className: "fa fa-star", "aria-hidden": "true" }),
+            _react2.default.createElement(
+              "h5",
+              null,
+              "2017 BMW 5-Series"
+            ),
+            _react2.default.createElement(
+              "h6",
+              null,
+              "Atlanta"
+            )
+          )
+        );
+      });
+    };
+
     _this.state = {};
     return _this;
   }
 
   _createClass(Category, [{
-    key: "render",
-    value: function render() {
+    key: "showMakeModelDropdown",
+    value: function showMakeModelDropdown() {
       var _props = this.props,
           match = _props.match,
           location = _props.location,
           history = _props.history;
 
+      if (match.params.listings == 'cars-and-trucks') {
+        return _react2.default.createElement(
+          "div",
+          null,
+          _react2.default.createElement(
+            "div",
+            { className: "form-group make" },
+            _react2.default.createElement(
+              "label",
+              null,
+              "MAKE"
+            ),
+            _react2.default.createElement(
+              "select",
+              { name: "make", className: "make" },
+              _react2.default.createElement(
+                "option",
+                { value: "0" },
+                "0"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "form-group model" },
+            _react2.default.createElement(
+              "label",
+              null,
+              "MODEL"
+            ),
+            _react2.default.createElement(
+              "select",
+              { name: "model", className: "model" },
+              _react2.default.createElement(
+                "option",
+                { value: "BMW" },
+                "BMW"
+              )
+            )
+          )
+        );
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _props2 = this.props,
+          match = _props2.match,
+          location = _props2.location,
+          history = _props2.history;
+
       return _react2.default.createElement(
         "div",
-        { className: "category" },
+        { className: "listings-page" },
         _react2.default.createElement(
           "div",
           { className: "container" },
-          "This category is ",
-          match.params.category
+          _react2.default.createElement(
+            "section",
+            { id: "filter" },
+            _react2.default.createElement(
+              "div",
+              { className: "form-group price" },
+              _react2.default.createElement(
+                "label",
+                null,
+                "PRICE"
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "min-max" },
+                _react2.default.createElement(
+                  "select",
+                  { name: "price", className: "min-price" },
+                  _react2.default.createElement(
+                    "option",
+                    { value: "0" },
+                    "0"
+                  )
+                ),
+                _react2.default.createElement(
+                  "select",
+                  { name: "max-price", className: "max-price" },
+                  _react2.default.createElement(
+                    "option",
+                    { value: "1000" },
+                    "1000"
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "form-group button" },
+              _react2.default.createElement(
+                "div",
+                { className: "primary-btn" },
+                "Update"
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "reset-btn" },
+                "Reset"
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "section",
+          { id: "list-view" },
+          _react2.default.createElement(
+            "div",
+            { className: "container" },
+            _react2.default.createElement(
+              "div",
+              { className: "white-box" },
+              _react2.default.createElement(
+                "section",
+                { className: "change-view" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "form-group view-dropdown" },
+                  _react2.default.createElement(
+                    "select",
+                    { name: "select-view", className: "select-view" },
+                    _react2.default.createElement(
+                      "option",
+                      { value: "gallery" },
+                      "Gallery View"
+                    ),
+                    _react2.default.createElement(
+                      "option",
+                      { value: "list" },
+                      "List View"
+                    ),
+                    _react2.default.createElement(
+                      "option",
+                      { value: "thumb" },
+                      "Thumb View"
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "form-group sort-dropdown" },
+                  _react2.default.createElement(
+                    "select",
+                    { name: "sort-dropdown", className: "sort-dropdown" },
+                    _react2.default.createElement(
+                      "option",
+                      { value: "gallery" },
+                      "Newest"
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "section",
+                { className: "all-items" },
+                this.loopItems()
+              )
+            )
+          )
         )
       );
     }
