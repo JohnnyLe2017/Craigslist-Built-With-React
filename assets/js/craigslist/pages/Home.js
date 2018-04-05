@@ -54,7 +54,8 @@ export default class Home extends Component {
 				}
 				return (
 					<div className="categories" key={i}>
-						<div className="title">{category.title}</div>
+						<a href={`/${match.params.city}/${category.title}`}
+						className="title">{category.title}</a>
 						<div className={`group-links ${(category.title == 'jobs' || category.title == 'personals' || category.title == 'housing') ? 'single-col' : ''}`}>
 							{loopListings()}
 						</div>

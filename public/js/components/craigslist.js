@@ -699,8 +699,9 @@ var Home = function (_Component) {
 						'div',
 						{ className: 'categories', key: i },
 						_react2.default.createElement(
-							'div',
-							{ className: 'title' },
+							'a',
+							{ href: '/' + match.params.city + '/' + category.title,
+								className: 'title' },
 							category.title
 						),
 						_react2.default.createElement(
