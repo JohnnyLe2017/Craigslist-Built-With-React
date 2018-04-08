@@ -26,19 +26,19 @@ export default class Category extends Component {
     });
   };
 
-  showMakeModelDropdown() {
+  showMakeModelDropdown = () => {
     const { match, location, history } = this.props;
     if(match.params.listings == 'cars-and-trucks') {
-      return (<div>
+      return (<div className="make-model-comp">
         <div className="form-group make">
-        <label>MAKE</label>
+        <label>Make</label>
         <select name="make" className="make">
           <option value="0">0</option>
         </select>
       </div>
-  
+
       <div className="form-group model">
-        <label>MODEL</label>
+        <label>Model</label>
         <select name="model" className="model">
           <option value="BMW">BMW</option>
         </select>
@@ -54,7 +54,7 @@ export default class Category extends Component {
         <div className="container">
           <section id="filter">
             <div className="form-group price">
-              <label>PRICE</label>
+              <label>Price</label>
               <div className="min-max">
                 <select name="price" className="min-price">
                   <option value="0">0</option>
@@ -64,8 +64,8 @@ export default class Category extends Component {
                 </select>
               </div>
             </div>
-          
 
+            {this.showMakeModelDropdown()}
             <div className="form-group button">
               <div className="primary-btn">Update</div>
               <div className="reset-btn">Reset</div>

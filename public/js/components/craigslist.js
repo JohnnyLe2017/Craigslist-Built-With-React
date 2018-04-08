@@ -81,7 +81,7 @@ var App = function (_Component) {
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: _Home2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/:city", component: _Home2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/:city/:category", component: _Category2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/:city/:category/:listings", component: _Listings2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/:city/:category/:listings", component: _Category2.default }),
           _react2.default.createElement(_reactRouterDom.Route, {
             exact: true,
             path: "/:city/:category/:listings/:item",
@@ -344,29 +344,23 @@ var Category = function (_Component) {
       });
     };
 
-    _this.state = {};
-    return _this;
-  }
-
-  _createClass(Category, [{
-    key: "showMakeModelDropdown",
-    value: function showMakeModelDropdown() {
-      var _props = this.props,
-          match = _props.match,
-          location = _props.location,
-          history = _props.history;
+    _this.showMakeModelDropdown = function () {
+      var _this$props = _this.props,
+          match = _this$props.match,
+          location = _this$props.location,
+          history = _this$props.history;
 
       if (match.params.listings == 'cars-and-trucks') {
         return _react2.default.createElement(
           "div",
-          null,
+          { className: "make-model-comp" },
           _react2.default.createElement(
             "div",
             { className: "form-group make" },
             _react2.default.createElement(
               "label",
               null,
-              "MAKE"
+              "Make"
             ),
             _react2.default.createElement(
               "select",
@@ -384,7 +378,7 @@ var Category = function (_Component) {
             _react2.default.createElement(
               "label",
               null,
-              "MODEL"
+              "Model"
             ),
             _react2.default.createElement(
               "select",
@@ -398,14 +392,19 @@ var Category = function (_Component) {
           )
         );
       }
-    }
-  }, {
+    };
+
+    _this.state = {};
+    return _this;
+  }
+
+  _createClass(Category, [{
     key: "render",
     value: function render() {
-      var _props2 = this.props,
-          match = _props2.match,
-          location = _props2.location,
-          history = _props2.history;
+      var _props = this.props,
+          match = _props.match,
+          location = _props.location,
+          history = _props.history;
 
       return _react2.default.createElement(
         "div",
@@ -422,7 +421,7 @@ var Category = function (_Component) {
               _react2.default.createElement(
                 "label",
                 null,
-                "PRICE"
+                "Price"
               ),
               _react2.default.createElement(
                 "div",
@@ -447,6 +446,7 @@ var Category = function (_Component) {
                 )
               )
             ),
+            this.showMakeModelDropdown(),
             _react2.default.createElement(
               "div",
               { className: "form-group button" },
