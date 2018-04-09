@@ -28,13 +28,13 @@ export default class Category extends Component {
         return (
           <div className="item">
             <div className="image">
-              <div className="price">$9,000</div>
+              <div className="price">${item.price}</div>
               Image
             </div>
             <div className="details">
               <i className="fa fa-star" aria-hidden="true" />
-              <h5>2017 BMW 5-Series</h5>
-              <h6>Atlanta</h6>
+              <h5>{item.title}</h5>
+              <h6>{item.city}</h6>
             </div>
           </div>
         );

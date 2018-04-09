@@ -325,7 +325,8 @@ var Category = function (_Component) {
               _react2.default.createElement(
                 "div",
                 { className: "price" },
-                "$9,000"
+                "$",
+                item.price
               ),
               "Image"
             ),
@@ -336,12 +337,12 @@ var Category = function (_Component) {
               _react2.default.createElement(
                 "h5",
                 null,
-                "2017 BMW 5-Series"
+                item.title
               ),
               _react2.default.createElement(
                 "h6",
                 null,
-                "Atlanta"
+                item.city
               )
             )
           );
