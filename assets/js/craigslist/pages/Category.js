@@ -27,7 +27,9 @@ export default class Category extends Component {
       return this.state.itemsData.map((item, i) => {
         return (
           <div className="item">
-            <div className="image">
+            <div className="image" style={{
+              backgroundImage: `url('${item.images[0]}')`
+            }}>
               <div className="price">${item.price}</div>
               Image
             </div>

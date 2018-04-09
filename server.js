@@ -25,8 +25,13 @@ app.get('/api/:city', function (req, res) {
 })
 
 // This shows all items for a category
-app.get('/api/:city/:categories', function (req, res) {
-  res.json(itemsData)
+app.get('/api/:city/:category', function (req, res) {
+  console.log(req.params.city)
+  const newData = itemsData.filter((item) => {
+    return item.city == req.params.city &&
+    item.category == req.params.category
+  })
+  res.json(newData)
 })
 
 // Show all items for a listing

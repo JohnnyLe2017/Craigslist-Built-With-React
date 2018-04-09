@@ -321,7 +321,9 @@ var Category = function (_Component) {
             { className: "item" },
             _react2.default.createElement(
               "div",
-              { className: "image" },
+              { className: "image", style: {
+                  backgroundImage: "url('" + item.images[0] + "')"
+                } },
               _react2.default.createElement(
                 "div",
                 { className: "price" },
