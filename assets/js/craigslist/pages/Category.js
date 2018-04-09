@@ -51,13 +51,16 @@ export default class Category extends Component {
         <div className="form-group make">
         <label>Make</label>
         <select name="make" className="make">
-          <option value="0">0</option>
+          <option value="BMW">BMW</option>
+          <option value="Honda">Honda</option>
+          <option value="Toyota">Toyota</option>
         </select>
       </div>
 
       <div className="form-group model">
         <label>Model</label>
-        <select name="model" className="model">
+        <select name="model" className="model"
+        onChange={this.handleChange}>
           <option value="BMW">BMW</option>
         </select>
       </div>
@@ -65,6 +68,17 @@ export default class Category extends Component {
     }
   }
 
+  handleChange = (event) => {
+    const name = event.target.name
+    const value = (event.target.type == 'checkbox') ?
+    event.target.checked : event.target.value
+
+    this.setState({
+      [name]: value
+    }, () => {
+        console.log(this.state)
+    })
+  }
   render() {
     const { match, location, history } = this.props;
     return (
@@ -74,11 +88,17 @@ export default class Category extends Component {
             <div className="form-group price">
               <label>Price</label>
               <div className="min-max">
-                <select name="price" className="min-price">
+                <select name="min-price" className="min-price"
+                onChange={this.handleChange}>
                   <option value="0">0</option>
-                </select>
-                <select name="max-price" className="max-price">
                   <option value="1000">1000</option>
+                  <option value="5000">5000</option>
+                </select>
+                <select name="max-price" className="max-price"
+                onChange={this.handleChange}>
+                <option value="1000">1000</option>
+                <option value="5000">5000</option>
+                <option value="1000">10000</option>
                 </select>
               </div>
             </div>
