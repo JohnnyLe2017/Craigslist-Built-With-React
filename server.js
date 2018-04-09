@@ -26,7 +26,7 @@ app.get('/api/:city', function (req, res) {
 
 // This shows all items for a category
 app.get('/api/:city/:categories', function (req, res) {
-  res.json(categoriesData)
+  res.json(itemsData)
 })
 
 // Show all items for a listing
