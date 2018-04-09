@@ -1,30 +1,46 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import axios from 'axios'
 
 export default class Category extends Component {
   constructor() {
     super();
     this.state = {};
   }
-
-  loopItems = () => {
-    let testArray = [1, 2, 3, 4, 5, 6, 7, 8];
-    return testArray.map((item, i) => {
-      return (
-        <div className="item">
-          <div className="image">
-            <div className="price">$9,000</div>
-            Image
-          </div>
-          <div className="details">
-            <i className="fa fa-star" aria-hidden="true" />
-            <h5>2017 BMW 5-Series</h5>
-            <h6>Atlanta</h6>
-          </div>
-        </div>
-      );
+  componentWillMount(){
+    const {match, history } = this.props
+    const self = this;
+    axios.get(`/api/${match.params.city}/${match.params.category}`)
+    .then(function (response) {
+      self.setState({
+        itemsData: response.data
+      }, () => {
+        console.log(self.state);
+      })
+    })
+    .catch(function (error) {
+      console.log(error);
     });
-  };
+  }
+  loopItems = () => {
+    if(this.state.itemsData != undefined){
+      return this.state.itemsData.map((item, i) => {
+        return (
+          <div className="item">
+            <div className="image">
+              <div className="price">$9,000</div>
+              Image
+            </div>
+            <div className="details">
+              <i className="fa fa-star" aria-hidden="true" />
+              <h5>2017 BMW 5-Series</h5>
+              <h6>Atlanta</h6>
+            </div>
+          </div>
+        );
+      });
+    }
+};
 
   showMakeModelDropdown = () => {
     const { match, location, history } = this.props;

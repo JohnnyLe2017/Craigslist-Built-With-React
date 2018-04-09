@@ -148,7 +148,7 @@ var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _axios = __webpack_require__(69);
+var _axios = __webpack_require__(41);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -293,6 +293,10 @@ var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _axios = __webpack_require__(41);
+
+var _axios2 = _interopRequireDefault(_axios);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -310,38 +314,39 @@ var Category = function (_Component) {
     var _this = _possibleConstructorReturn(this, (Category.__proto__ || Object.getPrototypeOf(Category)).call(this));
 
     _this.loopItems = function () {
-      var testArray = [1, 2, 3, 4, 5, 6, 7, 8];
-      return testArray.map(function (item, i) {
-        return _react2.default.createElement(
-          "div",
-          { className: "item" },
-          _react2.default.createElement(
+      if (_this.state.itemsData != undefined) {
+        return _this.state.itemsData.map(function (item, i) {
+          return _react2.default.createElement(
             "div",
-            { className: "image" },
+            { className: "item" },
             _react2.default.createElement(
               "div",
-              { className: "price" },
-              "$9,000"
-            ),
-            "Image"
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "details" },
-            _react2.default.createElement("i", { className: "fa fa-star", "aria-hidden": "true" }),
-            _react2.default.createElement(
-              "h5",
-              null,
-              "2017 BMW 5-Series"
+              { className: "image" },
+              _react2.default.createElement(
+                "div",
+                { className: "price" },
+                "$9,000"
+              ),
+              "Image"
             ),
             _react2.default.createElement(
-              "h6",
-              null,
-              "Atlanta"
+              "div",
+              { className: "details" },
+              _react2.default.createElement("i", { className: "fa fa-star", "aria-hidden": "true" }),
+              _react2.default.createElement(
+                "h5",
+                null,
+                "2017 BMW 5-Series"
+              ),
+              _react2.default.createElement(
+                "h6",
+                null,
+                "Atlanta"
+              )
             )
-          )
-        );
-      });
+          );
+        });
+      }
     };
 
     _this.showMakeModelDropdown = function () {
@@ -399,12 +404,30 @@ var Category = function (_Component) {
   }
 
   _createClass(Category, [{
-    key: "render",
-    value: function render() {
+    key: "componentWillMount",
+    value: function componentWillMount() {
       var _props = this.props,
           match = _props.match,
-          location = _props.location,
           history = _props.history;
+
+      var self = this;
+      _axios2.default.get("/api/" + match.params.city + "/" + match.params.category).then(function (response) {
+        self.setState({
+          itemsData: response.data
+        }, function () {
+          console.log(self.state);
+        });
+      }).catch(function (error) {
+        console.log(error);
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _props2 = this.props,
+          match = _props2.match,
+          location = _props2.location,
+          history = _props2.history;
 
       return _react2.default.createElement(
         "div",
@@ -839,7 +862,7 @@ var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _axios = __webpack_require__(69);
+var _axios = __webpack_require__(41);
 
 var _axios2 = _interopRequireDefault(_axios);
 
