@@ -122,8 +122,9 @@ export default class Category extends Component {
                   </select>
                 </div>
                 <div className="form-group sort-dropdown">
-                  <select name="sort-dropdown" className="sort-dropdown">
-                    <option value="gallery">Newest</option>
+                  <select name="sort" className="sort-dropdown" onChange={this.handleChange}>
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
                   </select>
                 </div>
               </section>

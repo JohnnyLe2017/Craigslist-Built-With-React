@@ -573,11 +573,16 @@ var Category = function (_Component) {
                   { className: "form-group sort-dropdown" },
                   _react2.default.createElement(
                     "select",
-                    { name: "sort-dropdown", className: "sort-dropdown" },
+                    { name: "sort", className: "sort-dropdown", onChange: this.handleChange },
                     _react2.default.createElement(
                       "option",
-                      { value: "gallery" },
+                      { value: "newest" },
                       "Newest"
+                    ),
+                    _react2.default.createElement(
+                      "option",
+                      { value: "oldest" },
+                      "Oldest"
                     )
                   )
                 )
