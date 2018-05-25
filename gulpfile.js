@@ -35,14 +35,14 @@ gulp.task('browser-sync', ['styles'], function () {
        target: 'localhost:5000', // can be [virtual host, sub-directory, localhost with port]
        ws: true // enables websockets
      },
-    
+
      serveStatic: ['.', './public']
    })
 
   //browserSync.init({
   //      server: './public',
   //      notify: false,
-  //      open: false //change this to true if //you want the broser to open automatically
+  //      open: false //change this to true if //you want the browser to open automatically
   //  });
 })
 
