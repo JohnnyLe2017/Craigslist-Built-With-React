@@ -6,10 +6,10 @@
     padding: 20px;
     background: #FFF;
   }
+
   .submenu {
     display: flex;
     justify-content: space-between;
-
 
     a {
       color: #2A7DDD;
@@ -18,27 +18,49 @@
     }
 
     .direction {
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Chrome */
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
       flex-direction: row;
     }
 
     .sub-links {
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Chrome */
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
       flex-direction: row;
-
     }
   }
+
   .content-area {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 
     .media-column {
-
       .gallery {
         .slider {
           .main-image {
             position: relative;
+
             .arrows {
               top: 0;
               bottom: 0;
@@ -46,19 +68,34 @@
               height: 100%;
               position: absolute;
               background: rgba(0,0,0, .3);
+              display: -webkit-box;
+              /* OLD - iOS 6-, Safari 3.1-6 */
+              display: -moz-box;
+              /* OLD - Firefox 19- (buggy but mostly works) */
+              display: -ms-flexbox;
+              /* TWEENER - IE 10 */
+              display: -webkit-flex;
+              /* NEW - Chrome */
               display: flex;
-              align-items: center;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
               justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
               font-size: 1.8rem;
               color: #FFF;
               cursor: pointer;
+
               &.left-arrow {
                 left: 0;
               }
+
               &.right-arrow {
                 right: 0;
               }
             }
+
             .image-1 {
               background-image: url("https://cars.usnews.com/static/images/Auto/custom/13372/2017_BMW_5-Series_5.jpg");
               width: 100%;
@@ -75,6 +112,7 @@
           display: grid;
           grid-template-columns: repeat(6, 1fr);
           grid-gap: 5px;
+
           .thumb-image {
             width: 100px;
             height: 100px;
@@ -86,30 +124,35 @@
         }
       }
     }
+
     .details-column {
       .date {
-        font-size: .9rem;
+        font-size: 0.9rem;
         color: #424242;
         margin-bottom: 15px;
       }
+
       .title {
         font-size: 2rem;
         font-weight: 700;
         margin-bottom: 15px;
       }
+
       .price {
         font-size: 1.7rem;
         color: green;
         font-weight: 500;
         margin-bottom: 30px;
       }
+
       label {
         font-weight: 700;
-        font-size: .8rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
         margin-bottom: 10px;
         display: block;
       }
+
       .more-details {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -117,8 +160,8 @@
         padding-bottom: 30px;
         margin-bottom: 30px;
         border-bottom: 2px solid #F6F6F7;
-        .info {
 
+        .info {
           h5 {
             font-size: 0.9rem;
             font-weight: 400;
@@ -126,6 +169,7 @@
           }
         }
       }
+
       .description {
         p {
           color: #424242;

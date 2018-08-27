@@ -4,28 +4,28 @@
 @import "listings";
 @import "details";
 
-*{
+* {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
   font-family: 'Roboto', sans-serif;
-   background-image: linear-gradient(to right, rgba(34,57,204,1) 0%, rgba(34,57,204,.8) 21%, rgba(159,83,230,.8) 100%),
-  url('https://s3-us-west-2.amazonaws.com/build-craigslist-with-react/nyc.JPG');
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center center;
-   min-height: 100vh;
+  background-image: linear-gradient(to right, rgba(34,57,204,1) 0%, rgba(34,57,204,.8) 21%, rgba(159,83,230,.8) 100%), url("https://s3-us-west-2.amazonaws.com/build-craigslist-with-react/nyc.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
 }
 
-header{
+header {
   padding: 20px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  color: white;
+  color: #fff;
 
-  .fas{
+  .fas {
     margin-left: 10px;
   }
 
@@ -34,14 +34,38 @@ header{
 
     .logo {
       font-size: 2rem;
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Chrome */
       display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
     }
 
     .city-dropdown {
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Chrome */
       display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       padding: 15px 20px;
       position: relative;
@@ -49,56 +73,79 @@ header{
       .scroll-area {
         position: absolute;
         background: blue;
-        top: 0px;
+        top: 0;
         width: 100%;
         overflow-y: scroll;
         overflow-x: hidden;
         visibility: hidden;
         opacity: 0;
-        transition: all .5s ease-in-out;
-        
-       &.active{
+        transition: all 0.5s ease-in-out;
+
+        &.active {
           visibility: visible;
           top: 50px;
           opacity: 1;
         }
 
-        ul{
-          li{
+        ul {
+          li {
             padding: 15px;
           }
         }
       }
     }
-    }
+  }
 
   .right-menu {
     display: flex;
     align-items: right;
     margin-left: 70rem;
-    }
+  }
 
   .user-img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 
   .user-dropdown {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 15px 20px;
-    }
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px 20px;
+  }
 
-   .post-btn {
-      font-weight: 300;
-      text-transform: capitalize;
-      padding: 15px 20px;
-      background: rgb(71, 133, 232);
-      color: #fff;
-    }
-
+  .post-btn {
+    font-weight: 300;
+    text-transform: capitalize;
+    padding: 15px 20px;
+    background: rgb(71, 133, 232);
+    color: #fff;
+  }
 }
 
 .container {
